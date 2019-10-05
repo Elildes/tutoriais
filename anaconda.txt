@@ -15,3 +15,7 @@
 Fontes:
 https://anaconda.org/anaconda/anaconda-navigator
 
+5. Abrir o Anaconda Navigator:
+> <abrir o terminal>
+> anaconda-navigator
+
