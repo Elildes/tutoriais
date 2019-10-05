@@ -1,0 +1,17 @@
+##### INSTALAR O ANACONDA NAVIGATOR NO LINUX #####
+
+1. Baixar o Miniconda (conda + Python):
+> https://docs.conda.io/en/latest/miniconda.html
+
+2. Instalar o Miniconda:
+> bash <nome_do_arquivo.sh>
+
+3. Atualizar o Miniconda:
+> conda update conda
+
+4. Baixar/instalar o Anaconda Navigator (Modo gráfico)
+> conda install -c anaconda anaconda-navigator
+
+Fontes:
+https://anaconda.org/anaconda/anaconda-navigator
+
