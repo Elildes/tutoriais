@@ -1,0 +1,15 @@
+DESCRIÇÃO	IPROUTE2
+01 - Exibir todas as interfaces de rede:	ip link show
+02 - Habilitar interface de rede:	ip link set up eth1
+03 - Desabilitar interface de rede:	ip link set down eth1
+04 - Definir IP/Mascára de rede:	ip addr add 192.168.0.1/24 dev eth1
+05 - Remover definição de IP/Mascára de rede:	ip addr del 192.168.0.1/24 dev eth1
+06 - Informações específicas de uma interface:	ip addr show dev eth1
+07 - Mudando o MAC-ADDRESS:	ip link set dev eth1 address 00:52:bc:33:25:a1
+08 - Exibir tabela de roteamento:	ip route show
+09 - Adicionando rota padrão:	ip route add default via 192.168.0.1
+10 - Adicionando rota estática:	ip route add 192.168.0.1/24 dev eth1
+11 - Manipulação e consulta de rede:	ethtool
+12 - Exibir informações da Wlan:	iw
+
+INSTALAR IPROUTER2
