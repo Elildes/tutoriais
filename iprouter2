@@ -10,6 +10,12 @@ DESCRIÇÃO	IPROUTE2
 09 - Adicionando rota padrão:	ip route add default via 192.168.0.1
 10 - Adicionando rota estática:	ip route add 192.168.0.1/24 dev eth1
 11 - Manipulação e consulta de rede:	ethtool
-12 - Exibir informações da Wlan:	iw
+12 - Exibir informações da Wlan:	iw [options] command
 
-INSTALAR IPROUTER2
+Ex. 12:
+iw --debug dev <devname> link
+iw --debug commands (lista todos comandos)
+iw --debug dev (lista todas interfaces de redes para hardware sem fio)
+iw --debug dev <devname> info (mostra informações para esta interface)
+iw --debug dev <devname> link
+iw --debug list (Listar todos os dispositivos sem fio e seus recursos)
