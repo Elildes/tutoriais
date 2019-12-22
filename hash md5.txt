@@ -1,6 +1,13 @@
-> md5sum lista01.txt > md5.md5
-Saída: md5sum lista01.txt > md5.md5
-Saída c/ erro: lista01.txt: FALHOU
 
->md5sum -c md5.md5 (-c: check)
-Saída: lista01.txt: SUCESSO
+
+2) VERIFICAR AUTOMATICAMENTE HASH MD5EM ARQUIVOS
+
+. Primeiramente criar um arquivo de verificão .md5:
+> md5sum lista01.txt > md5.md5
+
+. Comando de verificação (-c: check):
+> md5sum -c md5.md5 (-c: check)
+~Saída: lista01.txt: SUCESSO
+~Saída c/ erro: lista01.txt: FALHOU
+
+Fonte: https://www.blogopcaolinux.com.br/2016/11/verificar-md5-sha256-de-arquivos-terminal-linux.html
