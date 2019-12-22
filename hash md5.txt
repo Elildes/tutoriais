@@ -1,6 +1,7 @@
+1) CALCULAR HASH MD5 DE UM ARQUIVO:
+> md5sum nome_do_arquivo.ext
 
-
-2) VERIFICAR AUTOMATICAMENTE HASH MD5EM ARQUIVOS
+2) VERIFICAR AUTOMATICAMENTE HASH MD5 DE UM ARQUIVO:
 
 . Primeiramente criar um arquivo de verificão .md5:
 > md5sum lista01.txt > md5.md5
@@ -11,3 +12,19 @@
 ~Saída c/ erro: lista01.txt: FALHOU
 
 Fonte: https://www.blogopcaolinux.com.br/2016/11/verificar-md5-sha256-de-arquivos-terminal-linux.html
+
+3) CALCULAR HASH RECURSSIVAMENTE DE UM DIRETÓRIO:
+
+1.1) Se não há sub-diretórios:
+> md5sum um-diretorio-que-deseja-listar/*.*
+
+1.2) Com vários sub-diretórios:
+
+. Instalar o comando tree:
+> apt-get install tree
+
+. Eis o comando:
+> md5sum $(tree -ifF um-diretorio-que-deseja-listar | grep -v '\/$' | grep -v '^$' | grep -v 'directories, ')
+. Isto pode ser útil para encontrar arquivos de conteúdo igual, porém com nomes diferentes.
+
+Fonte: https://zeroandrade.com.br/calcular-o-hash-md5-recursivamente-de-um-diretorio-no-linux.html
