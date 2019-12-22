@@ -1,0 +1,6 @@
+> md5sum lista01.txt > md5.md5
+Saída: md5sum lista01.txt > md5.md5
+Saída c/ erro: lista01.txt: FALHOU
+
+>md5sum -c md5.md5 (-c: check)
+Saída: lista01.txt: SUCESSO
