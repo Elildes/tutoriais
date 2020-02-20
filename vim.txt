@@ -1,0 +1,8 @@
+*** Tutorial editor de texto Vim ***
+
+. Editar um arquivo:
+> < abrir o terminal na pasta do arquivo >
+> vim arquivo.ext
+> i (insert)
+> < editar o arquivo >
+> esc (sair)
