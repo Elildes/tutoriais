@@ -1,7 +1,8 @@
 *** Tutorial editor de texto Vim ***
 
-. Abrir arquivo
+. Abrir arquivo:
 vim arquivo.txt
+
 . Editar um arquivo:
 > < abrir o terminal na pasta do arquivo >
 > vim arquivo.ext
@@ -9,6 +10,8 @@ vim arquivo.txt
 > < editar o arquivo >
 > esc (sair)
 
+. Gravar e sair:
+> :wq
 
 
 
