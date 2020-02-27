@@ -1,0 +1,3 @@
+
+. Abrir arquivo
+vim arquivo.txt
