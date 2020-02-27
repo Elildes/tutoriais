@@ -1,0 +1,48 @@
+.tar o que é?
+Antes de explicar como instalar vamos explicar brevemente o que é o .tar quem é novo no Linux acaba se assustando quando busca um programa para instalar e acaba achando um arquivo .tar diferente do .zip ou .p7zip um arquivo .tar não é um programa que foi compactado como muitos locais acabam falando, .tar não é um compactador de arquivos!
+Mas então do que estamos falando? De um arquivador! A diferença é que um programa que está em .tar possui vários arquivos menores que permitem sua instalação.
+Curiosidade: o tar significa tape archive, uma lembrança dos tempos das fitas magnéticas.
+
+bz2, gz e xz?
+Como dito acima o .tar não é um compactador e sim um arquivador para sistemas Unix dos quais o Linux é o mais famoso hoje em dia embora reunir arquivos menores possa ser útil, compactar facilita e muito.
+Neste cenário aparecem o bz2,gz e xz são eles os compactadores no mundo Linux temos tar e um compactador combinado por isso encontramos .tar.bz2 por exemplo.
+
+. Acessar o manual do tar e dos compactadores:
+> man tar
+
+. Extrair pacotes tar.bz2:
+> tar -jxvf nome_do_arquivo.tar.bz2
+
+. Extrair pacotes tar.xz :
+> tar -Jxxvf nome_do_arquivo.tar.xz
+
+. Extrair pacotes tar.gz :
+> tar -zxvf nome_do_arquivo.tar.gz
+
+. Mover o pacote para a pasta  /usr/local:
+> sudo mv nome_do_arquivo /usr/local
+
+. Abrir o arquivo de texto INSTALL (ler instruções de instalação e instalar as dependências):
+> nano INSTALL.unx
+
+. Rodar a instalação:
+> ./configure
+
+Obs.: Algumas vezes pode ocorrer algum erro neste caso leia o guia de instalação geralmente INSTALL ou o README.
+Foi o caso que aconteceu ao fazer o procedimento, após ler o INSTALL encontramos que o comando a ser dado caso
+o ./configure não funcione é:
+
+> ./configure --prefix=/usr/local --with-slang=/goodies/lib (exemplo)
+
+. Continuar a instalação:
+> make
+> make clean
+> sudo make install
+
+Fonte: https://sempreupdate.com.br/como-instalar-pacotes-programas-tar-gz-bz2-xz-no-linux/
+
+
+
+
+
+
