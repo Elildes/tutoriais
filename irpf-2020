@@ -4,8 +4,11 @@
 ** Usaremos o OpenJDK **
 
 . Esta versão baixada do IRPF-2020 é a versão JAR (Java), pois não requer a instalação do programa JDK da Oracle, iremos usar o OpenJDK, que já vem instalado em muitas distribuições linux.
+. Obs.: caso o OpenJDK não esteja instalado, basta baixar do gerenciador de programas, buscando por "openjdk-8-jre".
 
-. Baixar o programa do site da Receita Federal e escolher as opções:
+1. Instalar o programa baixado da opção "Outros (Mac, Linux, Solaris)":
+
+. Baixar o programa IRPF do site da Receita Federal e escolher as opções:
 > Outros (Mac, Linux, Solaris)
 > SOLARIS/ OUTROS (JAR)
 > Programa IRPF 2020 (baixar o programa)
@@ -22,5 +25,23 @@ Fonte: http://receita.economia.gov.br/interface/cidadao/irpf/2020/download/solar
 
 . Iniciar a instalação:
 > java -jar irpf.jar
+
+. Após a instalação basta criar um atalho para a área de trabalho (ver: atalho no linux).
+
+
+2. Instalar o programa baixado da opção "Multiplataforma (zip)":
+
+. Baixar o programa IRPF do site da Receita Federal e escolher as opções:
+> Multiplataforma (zip)
+> Programa IRPF 2020 (baixar o programa)
+Fonte: http://receita.economia.gov.br/interface/cidadao/irpf/2020/download/multiplataforma-zip
+
+. Salvar a pasta do programa no diretório correspondente:
+> Extrair o arquivo zip baixado
+> Mover a pasta 'IRPF2020' extraída para um diretório correspondente. Ex.: /home/elildes/ProgramasRFB
+
+. Instalação do OpenJDK (java open source):
+. Obs.: caso o OpenJDK não esteja instalado, basta:
+> Baixar e instalar o OpenJDK do gerenciador de programas, buscando por "openjdk-8-jre"
 
 . Após a instalação basta criar um atalho para a área de trabalho (ver: atalho no linux).
