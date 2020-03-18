@@ -1,0 +1,26 @@
+
+*** INSTALAÇÃO DO PROGRAMA IRPF-2020 ***
+
+** Usaremos o OpenJDK **
+
+. Esta versão baixada do IRPF-2020 é a versão JAR (Java), pois não requer a instalação do programa JDK da Oracle, iremos usar o OpenJDK, que já vem instalado em muitas distribuições linux.
+
+. Baixar o programa do site da Receita Federal e escolher as opções:
+> Outros (Mac, Linux, Solaris)
+> SOLARIS/ OUTROS (JAR)
+> Programa IRPF 2020 (baixar o programa)
+Fonte: http://receita.economia.gov.br/interface/cidadao/irpf/2020/download/solaris-outros-jar
+
+. Executar a extração do pacote JAR
+> Abrir o terminal na pasta onde o programa foi baixado
+> java -jar IRPF2020v1.4.jar
+.. Failed to load module "canberra-gtk-module" (mensagem que aparece)
+. Será criado uma pasta "ProgramasRFB"
+
+. Entrar na pasta /"ProgramasRFB/IRPF2020"/:
+> cd /home/user_name/ProgramasRFB/IRPF2020
+
+. Iniciar a instalação:
+> java -jar irpf.jar
+
+. Após a instalação basta criar um atalho para a área de trabalho (ver: atalho no linux).
