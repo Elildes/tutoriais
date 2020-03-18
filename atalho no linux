@@ -12,7 +12,8 @@
 . É aberto a caixa "Criar lançador":
 > Tipo: Aplicativo
 > Nome: Nome_do_atalho. Ex.: IRPF-2020
-> Comando: comando_pra_executar-o_programa. Ex.: java -jar irpf.jar; ou
-> Navegar: (selecionar o programa)
+> Comando: <comando> /diretorio/programa.ext. Ex.: java -jar /home/user/ProgramasRFB/IRPF2020/irpf.jar
+> Navegar: (selecionar o "/diretório/programa.ext")
 > Comentário: Ex.: Atalho para o programa IRPF-2020
-. Por último clicar em "ok"
+. Obs.: para colocar a imagem do ícone basta clicar na área do ícone e escolher a imagem.
+> Por último clicar em "ok"
