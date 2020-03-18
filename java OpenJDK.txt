@@ -1,0 +1,18 @@
+*** TUTORIAL COMO INSTALAR JAVA (OpenJDK ***
+
+. Este é um tutorial de como fazer a instalação da versão do java open source.
+
+. Instalando o gerenciador de pacotes "Synaptic", visto que provavelmente na central de programas não encontramos o OpenJDK:
+> Baixar e instalar o Synaptic direto da central de programas do Ubuntu, buscando por "Synaptic Package manager".
+
+. Abrir o Synaptic e instalar o OpenJDK:
+> Basta clicar na teclar "iniciar" e digitar "Synapitc" + senha root
+> Clicar no menu "Pesquisar"
+> digitar "openjdk-8-jre" em "Pesquisar" (janela "Localizar" que abriu)
+> Mudar para "nome" na opção "Procurar em"
+> clicar em "Pesquisar" (lupa)
+> Dê um clique duplo em "openjdk-8-jre" para marcar para a instalação
+> Na janela que abriu clique em "Marcar"
+> depois clique no menu "Aplicar"
+> Na janela que abriu clique em "Apply"
+> Após a instalação, clique em "Close" e feche o gerenciador de pacotes.
