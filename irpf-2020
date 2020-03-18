@@ -3,8 +3,12 @@
 
 ** Usaremos o OpenJDK **
 
-. Esta versão baixada do IRPF-2020 é a versão JAR (Java), pois não requer a instalação do programa JDK da Oracle, iremos usar o OpenJDK, que já vem instalado em muitas distribuições linux.
-. Obs.: caso o OpenJDK não esteja instalado, basta baixar do gerenciador de programas, buscando por "openjdk-8-jre".
+. Esta versão baixada do IRPF-2020 é a versão JAR (Java), pois não requer a instalação do programa JDK da Oracle,
+  iremos usar o OpenJDK, que já vem instalado em muitas distribuições linux.
+  
+. Obs.: caso o OpenJDK não esteja instalado, basta baixar do central de programas, buscando por "openjdk-8-jre".
+. Obs.: se mesmo assim a sua central de programas do Ubuntu não tiver o "openjdk-8-jre", você deverá instalar
+        o gerenciador de pacotes "synaptic" e fazer a busca neste gerenciador (veja em java OpenJDK).
 
 1. Instalar o programa baixado da opção "Outros (Mac, Linux, Solaris)":
 
@@ -42,6 +46,6 @@ Fonte: http://receita.economia.gov.br/interface/cidadao/irpf/2020/download/multi
 
 . Instalação do OpenJDK (java open source):
 . Obs.: caso o OpenJDK não esteja instalado, basta:
-> Baixar e instalar o OpenJDK do gerenciador de programas, buscando por "openjdk-8-jre"
+> Baixar e instalar o OpenJDK da central de programas, buscando por "openjdk-8-jre"
 
 . Após a instalação basta criar um atalho para a área de trabalho (ver: atalho no linux).
