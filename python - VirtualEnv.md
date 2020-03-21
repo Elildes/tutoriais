@@ -12,7 +12,7 @@
 
 **4. Ativar o ambiente virtual criado:** após criar o ambiente virtual deveremos ativá-lo.
 
-**5. Outras opções de comandos:** como desativar seu ambiente virtual, como criar um ambiente usando o nome da versão do Python, como verificar qual a versão do Python está sendo utilizada, como acessar a documentação (help) do virtualenv.
+**5. Outras opções de comandos:** como desativar seu ambiente virtual, como criar um ambiente usando o nome da versão do Python, como verificar qual a versão do Python está sendo utilizada, como acessar a documentação (help) do virtualenv e como configurar as opções por padrão no arquivo virtualenv.ini.
 
 ## Metendo a mão na massa:
 
