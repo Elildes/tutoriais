@@ -10,12 +10,20 @@
 > conda update conda
 
 4. Baixar/instalar o Anaconda Navigator (Modo gráfico)
-> conda install -c anaconda anaconda-navigator
+> conda install -c anaconda anaconda-navigator, ou:
 
-Fontes:
-https://anaconda.org/anaconda/anaconda-navigator
+4. Baixar o arquivo.sh do site:
+> https://www.anaconda.com/distribution/#linux
+
+4. Instalar o Anaconda navigator:
+> sudo bash nome_do_arquivo.sh
+
+Obs.: caso queira atualizar digite o comando:
+> bash nome_do_arquivo.sh -u
 
 5. Abrir o Anaconda Navigator:
 > <abrir o terminal>
 > anaconda-navigator
 
+Fontes:
+https://anaconda.org/anaconda/anaconda-navigator
