@@ -1,0 +1,83 @@
+** CHMOD **
+
+Programa que faz alterações de permissões de arquivos e diretórios.
+
+chmod [opções] alteração arquivo
+
+Descrição
+Este comando altera as permissões de arquivos.
+
+Algumas opções do comando
+-c : informa quais arquivos estão tendo as permissões alteradas.
+-v : informa quais arquivos estão sendo processados (não necessariamente alterados).
+-R : altera, recursivamente, as permissões de arquivos.
+−−help : exibe opções do comando.
+−−version : exibe informações sobre o aplicativo.
+Modo ugoa
+A combinação das letras ugoa no comando chmod define quais os usuários estão tendo as suas permissões de acesso alteradas.
+
+u = o dono do arquivo (user);
+g = os usuários que são membros do mesmo grupo do arquivo (group);
+o = os usuários que não membros do grupo do arquivo (others);
+a = todos os usuários do sistema (all).
+Caso não seja especificada a classe dos usuários para os quais se está alterando as permissões, o sistema usa a opção a (todos os usuários).
+
+Deve-se usar, no comando chmod, um operador para especificar o tipo de modificação que se está fazendo nas permissões.
+
+o operador + provoca a adição das permissões informadas às permissões já existentes;
+o operador – provoca a remoção das permissões especificadas;
+o operador = provoca a redefinição das permissões (semelhante a zerar as permissões e defini-las novamente).
+A combinação das letras rwxst no comando chmod especifica as permissões de acesso.
+
+r = leitura.
+w = gravação.
+x = execução (para arquivos) ou autorização de acesso (para diretórios).
+u = as permissões do dono do arquivo.
+g = as permissões do grupo.
+o = as permissões dos outros usuários do sistema.
+s = permissão especial de execução de um arquivo ou de acesso a um diretório.
+Caso esta permissão seja dada ao dono do arquivo (diretório), a pessoa (com autorização) que executar o arquivo (acessar o diretório), o fará com as permissões de dono do arquivo (diretório). Este tipo de permissão é conhecido como SUID (Set User ID). Por exemplo, se o root possui um programa SUID, esse programa executará com privilégios de root, mesmo que tenha sido inicializado por um usuário comum.
+
+Caso esta permissão seja dada ao grupo do arquivo (diretório), a pessoa (com autorização) que executar o arquivo (acessar o diretório), o fará com se fosse membro do grupo a qual pertence o arquivo (diretório). Este tipo de permissão é conhecido como SGID (Set Group ID).
+
+t = permissão especial de execução de um arquivo ou de acesso a um diretório para o resto dos usuários do sistema (não é o dono e não pertence ao mesmo grupo do arquivo/diretório). Este tipo de permissão é conhecida como sticky bit.
+Caso esta permissão seja dada a um diretório, o usuário pode criar, alterar e apagar apenas os seus próprios arquivos que estão neste diretório. Por exemplo, o diretório /usr/temp, usado para armazenar arquivos temporários dos usuários do sistema, possui esta permissão.
+
+Caso esta permissão seja dada a um arquivo, o arquivo pode ser compartilhado entre os vários usuários do sistema.
+
+Exemplos do modo ugoa
+O comando
+chmod ug+rw teste.txt
+
+define que o arquivo teste.txt pode ser lido (r) e alterado (w) pelo dono (u) e pelos usuários que são membros do mesmo grupo (g) do arquivo teste.txt.
+
+Suponha que o arquivo teste tem as seguintes permissões:
+-rw-rw-r−− 1 aluno basico 2113 Nov 20 09:41 teste
+
+Isto significa que o dono (aluno) e o grupo (basico) possuem permissão para ler e escrever, enquanto os outros usuários do sistema podem apenas ler o arquivo. Ao digitarmos o comando
+
+chmod g+s teste
+
+as permissões do arquivo passam para
+
+-rw-rwSr−− 1 aluno basico 2113 Nov 20 09:41 teste
+
+A permissão S (letra maiúscula) indica que o arquivo não é executável. Se o arquivo tivesse permissão de execução para o grupo, apareceria s (letra minúscula) na permissão de execução do grupo.
+
+Continuando o exemplo acima, ao digitar
+chmod g=u teste
+
+teremos como resultado
+
+-rw-rw-r−− 1 aluno basico 2113 Nov 20 09:41 teste
+
+Isto acontece pois foi definido com o comando chmod que as permissões do grupo seriam iguais às permissões do dono do arquivo.
+
+(...)
+
+Observações
+Cada arquivo do sistema está alocado a um usuário (dono) e a um grupo. Isto significa que um arquivo está associado a um UID e a um GID. O UID e o GID são inicialmente herdados do usuário que cria o arquivo.
+É possível modificar o dono e o grupo de um arquivo com os comandos chown e chgrp.
+
+Fonte: https://guialinux.uniriotec.br/chmod/
+
