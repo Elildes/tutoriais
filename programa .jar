@@ -1,0 +1,10 @@
+INSTALAÇÃO DE PROGRAMA .JAR
+
+. Executar a extração do pacote JAR
+> Abrir o terminal na pasta onde o programa será instalado (para alguns programas não precisa ser na pasta a ser instalada, porque será perguntado posteriormente em qual pasta deverá ser instalado).
+> java -jar nome_do_programa.jar
+.. Failed to load module "canberra-gtk-module" (mensagem que aparece)
+. Em seguida será mostrado uma janela de instalação.
+. Basta seguir os passos da instalação.
+
+. Após a instalação basta criar um atalho para a área de trabalho (ver: atalho no linux).
