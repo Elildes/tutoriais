@@ -1,9 +1,22 @@
 TUTORIAL DO NMAP - ANÁLIDE REDES
 
-Exemplo 2: Analisar múltiplos IPs ou uma rede subnet
-Vários IPs , separando-os com um espaço:
 
-# nmap 192.168.1.1 192.168.1.2 192.168.1.
+Exemplo 1: Analisar um IP ou domínio Analise a um IP:
+
+# nmap 192.168.2.2
+
+Análise de um domínio:
+
+# nmap teste.com
+
+Análise com mais informações:
+
+# nmap -v 192.168.2
+
+
+Exemplo 2: Analisar múltiplos IPs ou uma rede subnet Vários IPs , separando-os com um espaço:
+
+# nmap 192.168.1.1 192.168.1.2 192.168.1
 
 Dentro da rede:
 
@@ -20,3 +33,5 @@ Uma seleção com um wildcard:
 Ou, uma rede completa:
 
 # nmap 192.168.1.0/24
+
+Fonte: https://www.vivaolinux.com.br/artigo/Nmap-30-Exemplos-para-Analises-de-Redes-e-Portas
