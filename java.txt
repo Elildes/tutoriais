@@ -1,0 +1,117 @@
+*** Dicas de instalação, remoção, etc do java no Lnux ***
+
+. Dicas completas de instalar, configurar e ativar o Java e javac:
+Fonte1: https://pt.wikihow.com/Instalar-o-Java-da-Oracle-no-Ubuntu-Linux
+Fonte2: https://pt.wikihow.com/Atualizar-o-Oracle-Java-no-Ubuntu-Linux
+
+. Dicas instalar versão atualizável do java:
+Fonte: https://diolinux.com.br/2015/07/como-instalar-java-ubuntu.html
+
+. Verificar qual versão do Java está rodando no linux:
+Abra o terminal e digite o seguinte comando:
+# java -version
+
+. Verificar qual verinstalar java linuxsão do compilador Java está rodando no linux:
+Abra o terminal e digite o seguinte comando:
+# javac -version
+
+Se você possuir a OpenJDK instalada em seu sistema, o resultado poderá ser algo parecido com isto:
+java version "1.6.0_21"
+OpenJDK Runtime Environment (IcedTea6 1.10pre) (6b21~pre1-0lucid1)
+OpenJDK 64-Bit Server VM (build 19.0-b09, mixed mode)
+
+Se você possui a OpenJDK em seu sistema, você está com a versão do fornecedor errado do Java instalada para este exercício.
+
+Fonte: https://pt.wikihow.com/Instalar-o-Java-da-Oracle-no-Ubuntu-Linux
+
+Obs.: Os locais comuns onde o Java fica instalado são:
+# /usr/java/jre_ ou /opt/jre_nb/jre_/bin/java/
+
+
+***** ÍNDICE *****
+
+I - Instalar o Java na pasta /usr/java/
+II - Ativar o java no browser (plug-in)
+III - Remover versões antigas
+IV - Desativar o java
+V - Ativar e exibir a Console Java para Linux
+
+
+I - Instalar o Java na pasta /usr/java/:
+
+Fonte: https://www.java.com/pt_BR/download/help/linux_x64_install.xml
+
+Obs.: Verificar a versão do Java: https://www.java.com/pt_BR/download/installed.jsp
+
+1. Vá para o diretório no qual deseja instalar o arquivo. Digite:
+# cd directory_path_name
+Por exemplo, para instalar o software no diretório /usr/java/, digite:
+# sudo su
+# cd /usr/java/
+
+2. Mova o archive binário .tar.gz para o diretório atual.
+3. Descompacte o tarball (arquivo compactado TAR) e instale o Java. Ex.:
+# tar zxvf jre-8u73-linux-x64.tar.gz
+
+Obs.: Os arquivos Java são instalados em um diretório chamado jre1.8.0_73 no diretório atual. Neste exemplo, ele é instalado no diretório /usr/java/jre1.8.0_73. Quando a instalação for concluída, você verá a palavra Done.
+4. Delete o arquivo .tar.gz se desejar economizar espaço em disco:
+# rm jre-8u73-linux-x64.tar.gz
+
+Obs.: As instruções acima se referem à instalação da versão do Java 8 Update 73 (8u73). Se estiver instalando outra versão, certifique-se de alterar o número da versão adequadamente ao digitar os comandos no terminal. Exemplo: para Java 8u79, substitua 8u73 por 8u79. Observe que, como no exemplo anterior, o número da versão às vezes é precedido pela letra u e às vezes é precedido por um sublinhado, por exemplo, jre1.8.0_73.
+
+Obs.: Sobre acesso-raiz: Para instalar o Java em um local no sistema, como /usr/local, faça log-in como usuário-raiz para obter as permissões necessárias. Se você não tiver acesso como raiz, instale o Java em seu diretório principal ou em um subdiretório para o qual tenha permissões de gravação.
+
+
+II - Ativar o java no browser (plug-in):
+
+Fonte: https://www.java.com/pt_BR/download/help/enable_browser_ubuntu.xml
+
+
+III - Remover versões antigas:
+
+Fonte: https://www.java.com/pt_BR/download/help/linux_uninstall.xml
+
+Desinstalação de arquivo de extração automática
+
+1. Descubra se o Java está instalado em alguma pasta. Os locais comuns são:
+# /usr/java/jre_ ou /opt/jre_nb/jre_/bin/java/
+
+2. Quando tiver localizado a pasta, você poderá excluir a pasta.
+
+Aviso: você deverá se certificar de que o Java já não esteja instalado usando RPM antes de remover a pasta.
+
+3. Digite: rm -r jre
+Por exemplo: rm -r jre1.7.0
+
+Obs.1: Devo desinstalar as versões anteriores do Java?
+É altamente recomendável que você desinstale do sistema todas as versões anteriores do Java.
+Manter versões anteriores do Java no seu sistema representa um sério risco à segurança.
+A desinstalação de versões anteriores do Java do seu sistema garante que as aplicações Java serão executadas com a segurança mais atualizada e as melhorias de desempenho no seu sistema.
+
+Obs.2: Preciso de versões anteriores do Java?
+A versão mais recente disponível é compatível com as versões anteriores. Entretanto, algumas aplicações Java (ou applets) podem indicar que elas dependem de uma versão específica, e talvez não sejam executadas se você não tiver essa versão instalada. Se uma aplicação ou página Web que você acessar exigir uma versão anterior do Java, relate isso ao provedor/desenvolvedor e solicite que ele atualize a aplicação para que seja compatível com todas as versões Java.
+
+
+IV - Desativar o java:
+
+
+V - Ativar e exibir a Console Java para Linux:
+
+Fonte: https://www.java.com/pt_BR/download/help/enable_console_linux.xml
+
+Ativando a Console Java para Linux ou Solaris
+
+1. Abra uma janela de Terminal.
+
+2. Vá para o diretório de instalação do Java. Neste exemplo, o Java está instalado no diretório:
+# /usr/java/
+# cd /usr/java/jre1.8.0_73/bin
+Obs.: Altere o caminho para onde você instalou o Java.
+
+3. Abra o Painel de Controle do Java. Digite:
+# ./ControlPanel
+4. No Painel de Controle do Java, clique na guia "Avançado".
+5. Selecione "Mostrar console" na seção Console Java.
+Clique no botão "Aplicar".
+
+Obs.: O console Java fornece informações sobre a versão do Java, o diretório principal do usuário e as mensagens de erro exibidas durante a execução de um applet ou aplicação. Você pode ativar a Console Java nas plataformas Linux e Solaris por meio do Painel de Controle do Java.
