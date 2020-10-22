@@ -1,0 +1,29 @@
+*** Configuração de Run Debug no Visual Studio Code ***
+
+Run Debug:
+. F6: se na compilação não precisar de argumentos.
+. F7: colocar os argumestos: Ex.: Arquivos.cpp -lm (etc.)
+. F5
+
+Setup do vs code:
+
+1) Extensão:
+
+. c/c++ (instalar)
+. c/c++ compile run (instalar)
+. mingw (instalar no windows)
+
+2) Configurar o debug no vs code:
+. f5 (start debug)
+. c/c++(gdb/lldb)
+. configuração padrão (abrir o launch.json: alterar program e externalConsole):
+
+"program": "${workspaceFolder}/a.out" (pasta do executável: ende o executável se encontra)
+"externalConsole": true (abrir janela do pronpt comandos)
+
+3) Criar um arquivo a.out (na pasta que foi configurado - "program"):
+gcc arquivo.c -g	(arquivo.c: qualquer arquivo c/c++ compilável)
+
+Obs.: ou compilação normal conforme arquivo c/c++.
+
+Fonte: https://www.youtube.com/watch?v=qCxTBPEH8m4&ab_channel=SiAbreuTec
