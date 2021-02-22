@@ -1,8 +1,5 @@
 ----TUTORIAL GIT HUB----
 
-. ITP-2019.1: https://github.com/Elildes/ufrn-2019.1-itp.git
-. ITP-2019.1-Projeto: https://github.com/Elildes/ufrn-2019.1-itp-projeto.git
-
 Documentação:
 Fonte: https://git-scm.com/book/pt-br/v1/Primeiros-passos-Sobre-Controle-de-Vers%C3%A3o
 Fonte: https://git-scm.com/book/pt-br/v1/Primeiros-passos-Configura%C3%A7%C3%A3o-Inicial-do-Git
@@ -286,13 +283,13 @@ Command line instructions
 You can also upload existing files from your computer using the instructions below.
 Git global setup
 
-git config --global user.name "ELILDES FORTALEZA SANTOS"
-git config --global user.email "elildes@ufrn.edu.br"
+git config --global user.name "YOUR NAME"
+git config --global user.email "user@email.com"
 
 Create a new repository
 
-git clone https://projetos.imd.ufrn.br/elildes/ufrn-2020.1-arq.comp.git
-cd ufrn-2020.1-arq.comp
+git clone https://url_your_user/name_your_project.git
+cd name_your_project
 touch README.md
 git add README.md
 git commit -m "add README"
@@ -302,7 +299,7 @@ Push an existing folder
 
 cd existing_folder
 git init
-git remote add origin https://projetos.imd.ufrn.br/elildes/ufrn-2020.1-arq.comp.git
+git remote add origin https://url_your_user/name_your_project.git
 git add .
 git commit -m "Initial commit"
 git push -u origin master
@@ -311,7 +308,6 @@ Push an existing Git repository
 
 cd existing_repo
 git remote rename origin old-origin
-git remote add origin https://projetos.imd.ufrn.br/elildes/ufrn-2020.1-arq.comp.git
+git remote add origin https://url_your_user/name_your_project.git
 git push -u origin --all
 git push -u origin --tags
-
