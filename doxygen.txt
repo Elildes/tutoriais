@@ -5,6 +5,7 @@ Fontes:
 > https://www.youtube.com/watch?v=oB40yKxppco (Video)
 > http://www.doxygen.nl/manual/starting.html (documentação oficial)
 > https://inacioferrarini.wordpress.com/pt-br/documentation/doxygen/#doxyfile (dicas)
+> https://moodle.ufsc.br/pluginfile.php/2377678/mod_resource/content/0/DoxygenTutorial.pdf
 
 . Para abrir:
 > abrir o terminal
