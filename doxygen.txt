@@ -48,9 +48,33 @@ Coment&aacute;rio n&atilde;o-Doxygen
  
 // Coment&aacute;rio n&atilde;o-Doxygen
 
+2) Mais exemplos:
 
-2) 
-. Para linguagens como C, C++ e Objective-C normalmente armazenam as definições em arquivos header (.h) e as implementações em outros arquivos (.c, .cpp, .m), sempre escreva os comentários Doxygen nos arquivos header. Alguns compiladores C++ permitem código nos arquivos header, mas eu acho que não é uma boa prática.
+#Classe
+/*! 
+Aqui fica a descrição da classe.
+@author nome do autor da classe(quem a escreveu inicialmente)
+*/
+`class Classe{}`
+
+#Função/Método
+//! Breve descrição do método de apenas uma linha.
+/**
+*Aqui fica a descricao completa do método.
+*@param nome e descrição breve do parametro
+*/
+`void metodo(String s){}`
+
+#Variáveis
+`int var;` //!< Descrição simples, ex.: 'guarda a quantidade de filmes'
+
+#Outras descrições
+/**
+*Qualquer informação extra pode ser feita utilizando esse modelo.
+*/
+Para um exemplo prático checar a classe: *Pessoa.hpp* e *Pessoa.cpp*
+
+3) Para linguagens como C, C++ e Objective-C normalmente armazenam as definições em arquivos header (.h) e as implementações em outros arquivos (.c, .cpp, .m), sempre escreva os comentários Doxygen nos arquivos header. Alguns compiladores C++ permitem código nos arquivos header, mas eu acho que não é uma boa prática.
 
 arquivo.h: assinatura da função que tem os comentários doxygen
 arquivo.c: implementações da função
