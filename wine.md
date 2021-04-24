@@ -1,7 +1,7 @@
-*Tutorial para instalação e execução do Wine no Ubuntu
+#Tutorial para instalação e execução do Wine no Ubuntu
 
 Fontes:
-[Como instalar Wine no Ubuntu 20.04 LTS](https://www.edivaldobrito.com.br/wine-no-ubuntu-1804-lts/)
+[Como instalar Wine no Ubuntu 20.04 LTS](https://www.edivaldobrito.com.br/wine-no-ubuntu-1804-lts/)  
 [Instalar Meta Trader no Linux](https://www.mql5.com/pt/articles/625?utm_source=www.metatrader5.com&utm_campaign=download.mt5.linux)
 
 **Introdução**
@@ -37,10 +37,10 @@ Instale o wine com o seguinte comando:
 `sudo apt-get install --install-recommends winehq-stable`
 
 Para instalar e rodar aplicativos para Windows no Linux com Winw
-Abra o gerenciador de arquivos.
-Vá até a pasta que tem o arquivo de programa.
-Clique com o botão direito do mouse.
-No menu clique em `Open with Wine`; ou 
+1. Abra o gerenciador de arquivos.
+2. Vá até a pasta que tem o arquivo de programa.
+3. Clique com o botão direito do mouse.
+4. No menu clique em `Open with Wine`; ou 
 
 Abra o terminal:
 `ctrl+alt+T`
@@ -51,6 +51,6 @@ Vá até a pasta onde está o programa e execute:
 Se tiver compilado para 64 bits, use o comando abaixo:
 `wine64 programa`
 
-Obs.: programa =  nome do executável Windows.
+*Obs.:* `programa` =  nome do executável Windows.
 
 
