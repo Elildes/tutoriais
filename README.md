@@ -10,4 +10,6 @@ Veja como fazer a instalação do programa IRPF2020 - Imposto de Renda de Pessoa
 [Instalar programas: tar.gz, tar.bz2 e tar.xz:](https://github.com/Elildes/tutoriais/blob/master/instalar%20programas_.tar.gz_tar.bz2_tar.xz.txt)
 Comandos usados para instalar programas com extens]oes do tipo:  .tar.gz, tar.bz2 e tar.xz
 
-[Instatar e executar programas do Windows no Lnux com Wine](https://github.com/Elildes/tutoriais/blob/master/wine.md)
+[Wine - instalar e executar programas do Windows no Linux](https://github.com/Elildes/tutoriais/blob/master/wine.md)
+Como instalar e executar programas do Windows no Linux com Wine.
+t
