@@ -1,4 +1,4 @@
-#Tutorial para instalação e execução do Wine no Ubuntu
+# Tutorial para instalação e execução do Wine no Ubuntu
 
 Fontes:
 [Como instalar Wine no Ubuntu 20.04 LTS](https://www.edivaldobrito.com.br/wine-no-ubuntu-1804-lts/)  
