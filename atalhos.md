@@ -46,3 +46,25 @@ b. GNOME Shell 3.34.1 ou superior
 6. Neste arquivo que você acabou de copiar para a área de trabalho, clique com o botão direito do mouse e clique em `permitir iniciar` (ou `Allow Launching`).  
 
 Seu novo atalho de aplicativo da área de trabalho está pronto.
+
+### Como criar o iniciador de atalhos da área de trabalho usando o comando `echo`
+
+Fonte: [Criar atalho no Linux usando o comando `echo`] (https://www.edivaldobrito.com.br/como-instalar-o-filezilla-no-linux/)
+**Obs.:** o o programa foi instalado na pasta `/opt/`
+  
+1. Criando um lançador:
+`echo -e '[Desktop Entry]\n Version=1.0\n Name=nome_do_programa\n Exec=/opt/nome_do_programa/bin/nome_do_programa\n Icon=/opt/nome_do_programa/share/icons/hicolor/48x48/apps/imagem_do_nome_do_programa.png\n Type=Application\n Categories=Application' | sudo tee /usr/share/applications/nome_do_programa.desktop`
+ 
+**Obs.:** Pronto! Agora, quando quiser iniciar o programa, digite filezilla em um terminal, seguido da tecla TAB.
+  
+2. Colocando o atalho na sua área de trabalho:
+`sudo chmod +x /usr/share/applications/nome_do_programa.desktop`
+`cp /usr/share/applications/filezilla.desktop  ~/Área\ de\ Trabalho/`
+  
+**Obs.:** Se quiser, você também pode usar o gerenciador de arquivos do sistema para executar o programa, apenas abrindo a pasta dele e clicando em seu executável.
+
+  
+  Fonte: [Criar atalho no Ubuntu 20.04](https://goto-linux.com/pt/2019/11/3/como-criar-o-iniciador-de-atalhos-da-area-de-trabalho-no-ubuntu-20.04-focal-fossa-linux/) 
+  
+  
+  
