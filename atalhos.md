@@ -49,7 +49,7 @@ Seu novo atalho de aplicativo da área de trabalho está pronto.
 
 ### Como criar o iniciador de atalhos da área de trabalho usando o comando `echo`
 
-Fonte: [Criar atalho no Linux usando o comando `echo`] (https://www.edivaldobrito.com.br/como-instalar-o-filezilla-no-linux/)
+Fonte: [Criar atalho no Linux usando o comando `echo`](https://www.edivaldobrito.com.br/como-instalar-o-filezilla-no-linux/)
 **Obs.:** o o programa foi instalado na pasta `/opt/`
   
 1. Criando um lançador:
@@ -62,9 +62,3 @@ Fonte: [Criar atalho no Linux usando o comando `echo`] (https://www.edivaldobrit
 `cp /usr/share/applications/filezilla.desktop  ~/Área\ de\ Trabalho/`
   
 **Obs.:** Se quiser, você também pode usar o gerenciador de arquivos do sistema para executar o programa, apenas abrindo a pasta dele e clicando em seu executável.
-
-  
-  Fonte: [Criar atalho no Ubuntu 20.04](https://goto-linux.com/pt/2019/11/3/como-criar-o-iniciador-de-atalhos-da-area-de-trabalho-no-ubuntu-20.04-focal-fossa-linux/) 
-  
-  
-  
