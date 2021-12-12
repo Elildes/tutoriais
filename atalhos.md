@@ -49,7 +49,8 @@ Seu novo atalho de aplicativo da área de trabalho está pronto.
 
 ### Como criar o iniciador de atalhos da área de trabalho usando o comando `echo`
 
-Fonte: [Criar atalho no Linux usando o comando `echo`](https://www.edivaldobrito.com.br/como-instalar-o-filezilla-no-linux/)
+Fonte: [Criar atalho no Linux usando o comando `echo`](https://www.edivaldobrito.com.br/como-instalar-o-filezilla-no-linux/)  
+
 **Obs.:** o o programa foi instalado na pasta `/opt/`
   
 1. Criando um lançador:
