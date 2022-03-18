@@ -19,7 +19,10 @@ Instalação e configuração do Java da Oracle via terminal.
 [SFTP - Servidor Linux para transferência segura de arquivos](https://github.com/Elildes/tutoriais/blob/master/sftp-server.md):
 Como instalar e configurar um servidor Linux SFTP.
 
-[Wine - instalar e executar programas do Windows no Linux](https://github.com/Elildes/tutoriais/blob/master/wine.md):
+[Windows - Como corrigir o Windows pelo CMD na inicialização](https://github.com/Elildes/tutoriais/blob/master/wine.md):
 Como instalar e executar programas do Windows no Linux com Wine.
+
+[Wine - instalar e executar programas do Windows no Linux](https://github.com/Elildes/tutoriais/blob/master/windows-corrigir-inicializa%C3%A7%C3%A3o.md):
+Como corrigir o Windows pelo CMD na inicialização.
 
 
