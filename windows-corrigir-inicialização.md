@@ -24,9 +24,9 @@ Digite os seguintes comandos:
 4. Sair:
 `exit`
 
-`ctrl + del`
+5. `ctrl + del`
 
-`reiniciar`
+6. `reiniciar`
 
 **Obs.:** Neste momento o checkdisk irá fazer uma checagem e corrigir os probemas.
 
