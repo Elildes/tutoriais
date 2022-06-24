@@ -1,7 +1,8 @@
 # Tutorial para instalação e configuração do Java no Linux Ubuntu
 
-Fonte:  
+Fontes:  
 [Como instalar o Oracle Java 16 no Ubuntu, Mint, Debian e derivados](https://www.edivaldobrito.com.br/como-instalar-o-oracle-java-16-no-ubuntu-mint-debian-e-derivados/)  
+[Compilando e Executando um Arquivo Java pela Linha de Comando](https://autociencia.blogspot.com/2016/09/compilando-e-executando-um-arquivo-java.html)  
 
 **Preliminares**
 
