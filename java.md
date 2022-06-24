@@ -1,4 +1,4 @@
-# Tutorial para instalação e configuração do Java no Linux e Windows
+# Tutorial para instalar, configurar e mudar a versão atual do Java no Linux e Windows
 
 Fontes:  
 [Como instalar o Oracle Java 16 no Ubuntu, Mint, Debian e derivados](https://www.edivaldobrito.com.br/como-instalar-o-oracle-java-16-no-ubuntu-mint-debian-e-derivados/)  
@@ -35,13 +35,13 @@ Verificar a versão java padrão instalada:
 `~$ sudo apt install oracle-java16-installer --no-install-recommends`
 
 
-## Instalação e mudar a versão atual do Java no Windows
+## Instalar e mudar a versão atual do Java no Windows
 
 1. Baixe e instale a versão do Java desejada
 2. Verificar a versão atual do java:  
 `java -version`
 
-Mudar a versão atual do java:  
+**Mudar a versão atual do java**
 1. `Windows > Editar as variáveis de ambiente > Variáveis de ambiente > Variáveis do sistema: Path > Editar: C:\Program Files\java\... (*)`  
 (*): colocar o caminho da pasta 'bin' do java desejado. Ex.: `C:\Program Files\Java\jdk-11.0.15.1\bin`  
 2. Reiniciar o PC.  
