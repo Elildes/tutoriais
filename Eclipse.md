@@ -1,11 +1,11 @@
-# Tutotial da IDE Eclipse
+# Tutorial da IDE Eclipse
 
 ## Importar Projeto
 1. `File`
 2. `Import`
 3. `...`
 
-**Reconfigurar o novo ambiente DEV (path)**
+**Reconfigurar o novo ambiente DEV (path)**  
 4. `Botão direito no projeto`
 5. `Properties`
 6. `Java Build Path: JRE > Edit: colocar a JVM necessária > Finish`
