@@ -19,5 +19,5 @@ Fonte: https://www.youtube.com/watch?v=KC-mZ5Ew_jE&ab_channel=IvanSalvadori
 2. `Team`
 3. `Escolher a opção desejada.` Ex.: `commit`, `push`, `pull`, etc  
 
-**Obs.:** para soncronizar o projeto Eclipse com o workspace, escolher a opção `Synchronize workspace`, depois
+**Obs.:** para sincronizar o projeto Eclipse com o workspace, escolher a opção `Synchronize workspace`, depois
 `Yes`.
