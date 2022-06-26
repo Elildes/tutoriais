@@ -12,3 +12,12 @@
 . Obs.: verificar mais opções, se necessário. Ex.: Server, Target Runtimes.
 
 Fonte: https://www.youtube.com/watch?v=KC-mZ5Ew_jE&ab_channel=IvanSalvadori
+
+
+## Atualizar/sincronizar o projeto com o Repositório Remoto
+1. `Botão direito no projeto`
+2. `Team`
+3. `Escolher a opção desejada.` Ex.: `commit`, `push`, `pull`, etc  
+
+**Obs.:** para soncronizar o projeto Eclipse com o workspace, escolher a opção `Synchronize workspace`, depois
+`Yes`.
