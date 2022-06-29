@@ -1,17 +1,49 @@
 # Tutorial da IDE Eclipse
 
-## Importar Projeto
-1. `File`
-2. `Import`
-3. `...`
+## Passo a passo importar projeto do GitHub para o Eclipse
+
+Fonte 1: https://www.youtube.com/watch?v=-IA9VivrY4c&ab_channel=AlexandreAtanes  
+Fonte 2: https://www.youtube.com/watch?v=KC-mZ5Ew_jE&ab_channel=IvanSalvadori  
+
+1. Clonar o repositório do GitHub ou Importar de uma pasta com o projeto já clonado  
+2. Adicionar o projeto clonado ao Eclipse  
+3. Reconfigurar o novo ambiente DEV (path)  
+4. Atualizar/sincronizar o projeto com o Repositório Remoto  
+
+
+### Importar ou Clonar o Projeto
+
+**Clonar projeto**
+1. `File` > `Import` > `Git` > `Projects from Git` > `Existing local repository` (projeto já clonado) ou `Clone URI` (clonar projeto) > `Next`  
+2. `Clone URI`  
+3. `Next`: adicionar URL do projeto do Git:  
+. `URI`: URL do projeto no GitHub (se copiar do Git o preenchimento é automático)   
+. `Host`: (preenchimento é automático)  
+. `Repository path`: (prenchimento automático)  
+. `User` + `password` (usuário e senha do GitHub)  
+4. `Next` > `Next`  
+. `Destination`: colocar o diretório onde o repositótio será clonado (salvo)  
+. `Projects`: `Import all existing Eclipse project...`  
+5. `Finish`  
+
+**Projeto já clonado**
+1. `File` > `Import` > `Git` > `Projects from Git` > `Existing local repository` (projeto já clonado) ou `Clone URI` (clonar projeto) > `Next`  
+2. `Add` > `Directory` (URL do prjeto no PC) > `Add`  
+3. `...`  
+
+**Adicionar o projeto clonado ao Eclipse**
+1. `Git Repository` (`Windows` > `Show view` > `Other` > `Git` > `Git Repositories`  
+2. `Botão direito do mouse no repositório`  
+3. `Import Projects...`  
+4. `Finish`  
+**Obs.:** aguardar a importação (demora um pouco dependendo projeto).  
+
 
 **Reconfigurar o novo ambiente DEV (path)**  
 4. `Botão direito no projeto`  
 5. `Properties`  
 6. `Java Build Path: JRE > Edit: colocar a JVM necessária > Finish`  
-. Obs.: verificar mais opções, se necessário. Ex.: Server, Target Runtimes.
-
-Fonte: https://www.youtube.com/watch?v=KC-mZ5Ew_jE&ab_channel=IvanSalvadori
+**Obs.:** verificar mais opções, se necessário. Ex.: Server, Target Runtimes.
 
 
 ## Atualizar/sincronizar o projeto com o Repositório Remoto
