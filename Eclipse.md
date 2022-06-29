@@ -25,18 +25,22 @@ Fonte 2: https://www.youtube.com/watch?v=KC-mZ5Ew_jE&ab_channel=IvanSalvadori
 . `Destination`: colocar o diretório onde o repositótio será clonado (salvo)  
 . `Projects`: `Import all existing Eclipse project...`  
 5. `Finish`  
+Adicionar o projeto clonado ao Eclipse:  
+6. `Git Repository` (`Windows` > `Show view` > `Other` > `Git` > `Git Repositories`  
+7. `Botão direito do mouse no repositório`  
+8. `Import Projects...`  
+9. `Finish`  
+**Obs.:** aguardar a importação (demora um pouco dependendo projeto).  
 
 **Projeto já clonado**
 1. `File` > `Import` > `Git` > `Projects from Git` > `Existing local repository` (projeto já clonado) ou `Clone URI` (clonar projeto) > `Next`  
 2. `Add` > `Directory` (URL do prjeto no PC) > `Add`  
 3. `...`  
-
-**Adicionar o projeto clonado ao Eclipse**
-1. `Git Repository` (`Windows` > `Show view` > `Other` > `Git` > `Git Repositories`  
-2. `Botão direito do mouse no repositório`  
-3. `Import Projects...`  
-4. `Finish`  
-**Obs.:** aguardar a importação (demora um pouco dependendo projeto).  
+Sincronizar o projeto Eclipse com o repositório remoto:  
+4. `Botão direito no projeto`  
+5. `Team`  
+6. `Synchronize workspace`  
+7. `Yes`  
 
 
 **Reconfigurar o novo ambiente DEV (path)**  
@@ -46,10 +50,7 @@ Fonte 2: https://www.youtube.com/watch?v=KC-mZ5Ew_jE&ab_channel=IvanSalvadori
 **Obs.:** verificar mais opções, se necessário. Ex.: Server, Target Runtimes.
 
 
-## Atualizar/sincronizar o projeto com o Repositório Remoto
+## Atualizar, mesclar, comitar, etc o projeto com o repositório remoto
 1. `Botão direito no projeto`
 2. `Team`
 3. `Escolher a opção desejada.` Ex.: `commit`, `push`, `pull`, etc  
-
-**Obs.:** para sincronizar o projeto Eclipse com o workspace, escolher a opção `Synchronize workspace`, depois
-`Yes`.
