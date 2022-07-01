@@ -14,7 +14,7 @@ Fonte 2: https://www.youtube.com/watch?v=KC-mZ5Ew_jE&ab_channel=IvanSalvadori
 ### Importar ou Clonar o Projeto
 
 **Clonar projeto**
-1. `File` > `Import` > `Git` > `Projects from Git` > `Existing local repository` (projeto já clonado) ou `Clone URI` (clonar projeto) > `Next`  
+1. `File` > `Import` > `Git` > `Projects from Git` > `Next`  
 2. `Clone URI`  
 3. `Next`: adicionar URL do projeto do Git:  
 . `URI`: URL do projeto no GitHub (se copiar do Git o preenchimento é automático)   
@@ -33,7 +33,7 @@ Adicionar o projeto clonado ao Eclipse:
 **Obs.:** aguardar a importação (demora um pouco dependendo projeto).  
 
 **Projeto já clonado**
-1. `File` > `Import` > `Git` > `Projects from Git` > `Existing local repository` (projeto já clonado) ou `Clone URI` (clonar projeto) > `Next`  
+1. `File` > `Import` > `Git` > `Projects from Git` > `Existing local repository` (projeto já clonado) > `Next`  
 2. `Add` > `Directory` (URL do prjeto no PC) > `Add`  
 3. `...`  
 Sincronizar o projeto Eclipse com o repositório remoto:  
@@ -41,6 +41,7 @@ Sincronizar o projeto Eclipse com o repositório remoto:
 5. `Team`  
 6. `Synchronize workspace`  
 7. `Yes`  
+**Obs.:** aguardar a importação (demora um pouco dependendo projeto).  
 
 
 **Reconfigurar o novo ambiente DEV (path)**  
