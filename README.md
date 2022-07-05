@@ -1,6 +1,6 @@
-# tutoriais
+# Tutoriais
 
-Pasta que contém vários tutoriais de instalação de pacotes e aplicativos no linux Ubuntu, mas também se aplica a várias distribuiçes.
+Pasta que contém vários tutoriais de instalação de pacotes e aplicativos no linux Ubuntu, mas também se aplica a várias distribuições e Windows também.
 
 Segue a lista dos tutoriais:
 
