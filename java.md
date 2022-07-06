@@ -38,6 +38,8 @@ Verificar a versão java padrão instalada:
 
 Fonte: https://www.java.com/pt-BR/download/help/path_pt-br.html  
 
+**Informações Gerais**: o PATH é uma variável do sistema usada pelo sistema operacional para localizar executáveis necessários da linha de comandos ou da janela Terminal. A variável do sistema PATH pode ser definida usando o Utilitário do Sistema no painel de controle no Windows ou no arquivo de inicialização do shell no Linux e no Solaris. Fazer alterações na variável PATH do sistema em geral não é necessário para computadores que executam o Windows ou o Mac OS X.  
+
 Para definir o caminho permanentemente, defina-o no arquivo de inicialização.  
 **Observação**: as instruções para dois dos mais populares Shells no Linux e Solaris são listadas. Se você estiver usando outros shells, consulte o Tutorial de Definição de Caminho.  
 
