@@ -34,6 +34,35 @@ Verificar a versão java padrão instalada:
 . Ou, instale, mas não torne o Oracle JDK 16 a versão padrão do JDK:  
 `~$ sudo apt install oracle-java16-installer --no-install-recommends`
 
+**Defina o PATH permanentemente**  
+
+Fonte: https://www.java.com/pt-BR/download/help/path_pt-br.html  
+
+Para definir o caminho permanentemente, defina-o no arquivo de inicialização.  
+**Observação**: as instruções para dois dos mais populares Shells no Linux e Solaris são listadas. Se você estiver usando outros shells, consulte o Tutorial de Definição de Caminho.  
+
+**Bash Shell**:  
+1. Edite o arquivo de inicialização:
+`nano ~/.bashrc`  
+2. Modifique a variável PATH:  
+```PATH=/usr/local/jdk1.8.0/bin:$PATH
+export PATH```
+3. Salve e feche o arquivo.
+4. Carregue o arquivo de inicialização:
+`% . /.profile`  
+5. Verifique se o caminho está definido repetindo o comando java:
+`% java -version`  
+
+**C Shell (csh)**: 
+1. Edite o arquivo de inicialização:  
+`nano ~/.cshrc)`  
+2. Defina o Caminho:  
+`set path=(/usr/local/jdk1.8.0/bin $path)`  
+3. Salve e feche o arquivo.  
+4. Carregue o arquivo de inicialização:  
+`% source ~/.cshrc`  
+5. Verifique se o caminho está definido repetindo o comando java:  
+`% java -version`  
 
 ## Instalar e mudar a versão atual do Java no Windows
 
