@@ -47,7 +47,7 @@ Para definir o caminho permanentemente, defina-o no arquivo de inicialização.
 `nano ~/.bashrc`
 
 . Modifique a variável PATH:  
-`PATH=/usr/local/jdk1.8.0/bin:$PATH`
+`PATH=/usr/local/jdk1.8.0/bin:$PATH`  
 `export PATH`
 
 . Salve e feche o arquivo.  
