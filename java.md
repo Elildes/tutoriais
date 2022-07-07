@@ -109,7 +109,7 @@ Purge config files (careful. This command removed libsgutils2-2 and virtualbox c
 `dpkg -l | grep ^rc | awk '{print($2)}' | xargs`  
 `sudo apt-get -y purge`  
 
-*Remove manually installed JVMs:  
+Remove manually installed JVMs:  
 `sudo rm -rf /usr/lib/jvm/*`  
 
 Remove Java entries, if there is still any, from the alternatives:  
