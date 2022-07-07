@@ -16,8 +16,8 @@ O comando abaixo permite que o usuário visualize as versões instaladas e escol
 
 Verificar a versão java padrão instalada:  
 ```
-~$ java --version	// e/ou:
-~$ javac -version
+~$ java --version	// Verifica a JVM padrão
+~$ javac -version // Verifica o JDK padrão
 ```
 
 **Instalar o Oracle Java 16 no Ubuntu**
@@ -100,6 +100,8 @@ Digite/Copie/Cole:
   
 2. Remova completamente a JDK/JRE de seu sistema e crie um diretório para guardar os binários da Oracle Java JDK/JRE. Isto irá evitar conflitos no sistema bem como confusões devido à versões do Java de diferentes fornecedores. Por exemplo, se você possui o OpenJDK/JRE instalado em seu sistema, você pode removê-los digitando o seguinte comando no terminal:  
 
+**Obs.**: caso não queira desinstalar nenhum java, pule para o passo 3..
+
 Remove all the Java related packages (Sun, Oracle, OpenJDK, IcedTea plugins, GIJ):  
 `dpkg-query -W -f='${binary:Package}\n' | grep -E -e '^(ia32-)?(sun|oracle)-java' -e '^openjdk-' -e '^icedtea' -e '^(default|gcj)-j(re|dk)' -e '^gcj-(.*)-j(re|dk)' -e '^java-common' | xargs`  
 `sudo apt-get -y remove`  
@@ -122,7 +124,7 @@ Pesquise por possíveis diretórios Java restantes:
 
 3. Baixe os arquivos tar do JDK e do JRE e descompacte os arquivos.  
 
-4 . Crie uma pasta chamada `java` em `/usr/local`.  
+4. Crie uma pasta chamada `java` em `/usr/local`.  
 
 5. Copie os arquivos baixados para `/usr/local/java`.  
 
@@ -134,15 +136,24 @@ Adicione os seguintes comandos no final do arquivo:
 `export JRE_HOME=/usr/local/java/jre1.8.0_202`  
 `export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin`  
 
+**Obs.**: caso queira usar o `java` (JVM) e o `javac` (compilador) do pacote `JDK`, não adicione o `JRE_HOME`:  
+Ex.:  
+`export JAVA_HOME=/usr/local/java/jdk1.8.0_202`  
+`export PATH=$PATH:$JAVA_HOME/bin`  
+
 7 - Feito isso, salve e feche o arquivo. Agora devemos informar o ubuntu onde o JDK e o JRE estão instalados:  
 `sudo update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jre1.8.0_202/bin/java" 1`  
 `sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/jdk1.8.0_202/bin/javac" 1`  
 `sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/local/java/jre1.8.0_202/bin/javaws" 1`  
 
+**Obs.**: caso você tenha adicionado apenas o `java` e o `javac`do pacote `JDK`, execute apenas os dois comandoc acima. Eu não vi o `javaws`no pacote `JDK` (carece de mais pesquisa).
+
 8 - Devemos setar o java instalado como padrão:  
 `sudo update-alternatives --set java /usr/local/java/jre1.8.0_202/bin/java`  
 `sudo update-alternatives --set javac /usr/local/java/jdk1.8.0_202/bin/javac`  
 `sudo update-alternatives --set javaws /usr/local/java/jre1.8.0_202/bin/javaws`  
+
+**Obs.**: caso você tenha adicionado apenas o `java` e o `javac`do pacote `JDK`, execute apenas os dois comandoc acima.
 
 9 - Reinicie a maquina.  
 
