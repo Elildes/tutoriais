@@ -101,13 +101,13 @@ https://www.youtube.com/watch?v=EAlXMeddu8k&ab_channel=BrunoMenezes
 2. Remova completamente a JDK/JRE de seu sistema e crie um diretório para guardar os binários da Oracle Java JDK/JRE. Isto irá evitar conflitos no sistema bem como confusões devido à versões do Java de diferentes fornecedores. Por exemplo, se você possui o OpenJDK/JRE instalado em seu sistema, você pode removê-los digitando o seguinte comando no terminal:  
 
 Remove all the Java related packages (Sun, Oracle, OpenJDK, IcedTea plugins, GIJ):  
-`dpkg-query -W -f='${binary:Package}\n' | grep -E -e '^(ia32-)?(sun|oracle)-java' -e '^openjdk-' -e '^icedtea' -e '^(default|gcj)-j(re|dk)' -e '^gcj-(.*)-j(re|dk)' -e '^java-common' | xargs`
-`sudo apt-get -y remove`  
-`sudo apt-get -y autoremove`  
+```dpkg-query -W -f='${binary:Package}\n' | grep -E -e '^(ia32-)?(sun|oracle)-java' -e '^openjdk-' -e '^icedtea' -e '^(default|gcj)-j(re|dk)' -e '^gcj-(.*)-j(re|dk)' -e '^java-common' | xargs
+sudo apt-get -y remove
+sudo apt-get -y autoremove```  
 
 Purge config files (careful. This command removed libsgutils2-2 and virtualbox config files too):  
-`dpkg -l | grep ^rc | awk '{print($2)}' | xargs`  
-`sudo apt-get -y purge`  
+```dpkg -l | grep ^rc | awk '{print($2)}' | xargs
+sudo apt-get -y purge```  
 
 Remove manually installed JVMs:  
 `sudo rm -rf /usr/lib/jvm/*`
