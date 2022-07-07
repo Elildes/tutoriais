@@ -16,8 +16,8 @@ Veja como fazer a instalação do programa IRPF2020 - Imposto de Renda de Pessoa
 [Instalar programas: tar.gz, tar.bz2 e tar.xz:](https://github.com/Elildes/tutoriais/blob/master/instalar%20programas_.tar.gz_tar.bz2_tar.xz.txt)
 Comandos usados para instalar programas com extens]oes do tipo:  .tar.gz, tar.bz2 e tar.xz
 
-[JAVA - Tutorial para instalar, configurar e mudar a versão atual do Java no Linux e Windows](https://github.com/Elildes/tutoriais/blob/master/java.md):
-Instalação, configuração e mudança do Java no Linux e Winodws.
+[JAVA - Tutorial para instalar e configurar o Java no Linux e Windows](https://github.com/Elildes/tutoriais/blob/master/java.md):
+Instalação, configuração, JAVA_HOME, JRE_HOME e mudança de versão do Java no Linux e Winodws.
 
 [SFTP - Servidor Linux para transferência segura de arquivos](https://github.com/Elildes/tutoriais/blob/master/sftp-server.md):
 Como instalar e configurar um servidor Linux SFTP.
