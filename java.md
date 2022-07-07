@@ -102,12 +102,12 @@ https://www.youtube.com/watch?v=EAlXMeddu8k&ab_channel=BrunoMenezes
 
 Remove all the Java related packages (Sun, Oracle, OpenJDK, IcedTea plugins, GIJ):  
 `dpkg-query -W -f='${binary:Package}\n' | grep -E -e '^(ia32-)?(sun|oracle)-java' -e '^openjdk-' -e '^icedtea' -e '^(default|gcj)-j(re|dk)' -e '^gcj-(.*)-j(re|dk)' -e '^java-common' | xargs`
-`sudo apt-get -y remove`
-`sudo apt-get -y autoremove`
+`sudo apt-get -y remove`  
+`sudo apt-get -y autoremove`  
 
 Purge config files (careful. This command removed libsgutils2-2 and virtualbox config files too):  
-`dpkg -l | grep ^rc | awk '{print($2)}' | xargs`
-`sudo apt-get -y purge`
+`dpkg -l | grep ^rc | awk '{print($2)}' | xargs`  
+`sudo apt-get -y purge`  
 
 Remove manually installed JVMs:  
 `sudo rm -rf /usr/lib/jvm/*`
@@ -116,9 +116,9 @@ Remove Java entries, if there is still any, from the alternatives:
 `for g in ControlPanel java java_vm javaws jcontrol jexec keytool mozilla-javaplugin.so orbd pack200 policytool rmid rmiregistry servertool tnameserv unpack200 appletviewer apt extcheck HtmlConverter idlj jar jarsigner javac javadoc javah javap jconsole jdb jhat jinfo jmap jps jrunscript jsadebugd jstack jstat jstatd native2ascii rmic schemagen serialver wsgen wsimport xjc xulrunner-1.9-javaplugin.so; do sudo update-alternatives --remove-all $g; done`
 
 Pesquise por possíveis diretórios Java restantes:  
-`sudo updatedb`
-`sudo locate -b '\pack200'`
-`sudo rm -rf /usr/local/java/*`
+`sudo updatedb`  
+`sudo locate -b '\pack200'`  
+`sudo rm -rf /usr/local/java/*`  
 
 3. Baixe os arquivos tar do JDK e do JRE e descompacte os arquivos.  
 
