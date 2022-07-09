@@ -159,3 +159,13 @@ Ex.:
 
 10 - Verifique a versão do java:  
 `java -version`
+
+
+# Configurar o Java Home no Windows
+
+Fonte: [Como configurar as variáveis JAVA_HOME, PATH E CLASSPATH no Windows](https://mauriciogeneroso.medium.com/configurando-java-4-como-configurar-as-vari%C3%A1veis-java-home-path-e-classpath-no-windows-46040950638f)
+
+(...)
+
+
+
