@@ -55,7 +55,7 @@ Sincronizar o projeto Eclipse com o repositório remoto:
 1. `Botão direito no projeto`
 2. `Team`
 3. `Escolher a opção desejada.` Ex.: `commit`, `push`, `pull`, etc  
-
+Fonte: https://douglasgaspar.wordpress.com/2021/01/28/utilizacao-do-git-em-ambiente-java-com-ide-eclipse/  
 
 ## Executar programa Java e JavaFX com arquivo executável .jar
 
