@@ -36,7 +36,8 @@ Adicionar o projeto clonado ao Eclipse:
 1. `File` > `Import` > `Git` > `Projects from Git` > `Existing local repository` (projeto já clonado) > `Next`  
 2. `Add` > `Directory` (URL do prjeto no PC) > `Add`  
 3. `...`  
-Sincronizar o projeto Eclipse com o repositório remoto:  
+
+**Sincronizar o projeto Eclipse com o repositório remoto**
 4. `Botão direito no projeto`  
 5. `Team`  
 6. `Synchronize workspace`  
@@ -52,9 +53,10 @@ Sincronizar o projeto Eclipse com o repositório remoto:
 
 
 ## Atualizar, mesclar, comitar, etc o projeto com o repositório remoto
-1. `Botão direito no projeto`
-2. `Team`
+1. `Botão direito no projeto`  
+2. `Team`  
 3. `Escolher a opção desejada.` Ex.: `commit`, `push`, `pull`, etc  
+
 Fonte: https://douglasgaspar.wordpress.com/2021/01/28/utilizacao-do-git-em-ambiente-java-com-ide-eclipse/  
 
 ## Executar programa Java e JavaFX com arquivo executável .jar
