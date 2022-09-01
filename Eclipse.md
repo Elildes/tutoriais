@@ -67,6 +67,6 @@ Fonte: https://www.youtube.com/watch?v=lwOFg-W7OSM&ab_channel=BoostMyTool
 2. Verifique no projeto do Eclipse o argumento do Java Application: `Run` > `Run Configurations` > `Java Application`: selecione o corespondente > `Arguments` > `VM arguments`: copie todo argumento > `Close`
 3. Abra o terminal (testei no cmd do Windows e deu certo)
 4. Vá para a pasta onde o programa `.jar` está instalado
-5. Execute o programa: `java <VM_ARGUMENTS> -jar PROGRAMA.jar`
-**Obs. 1**: `<VM_ARGUMENTS>` são os argumentos copiados no item '2.' e `PROGRAMA.jar` é o nome do programa a ser executado.
-**Obs. 2**: programas Java com JavaFX, ou qualquer outro que tem argumentos no Java Application, precisam ser executados desta maneira.
+5. Execute o programa: `java <VM_ARGUMENTS> -jar PROGRAMA.jar`  
+**Obs. 1**: `<VM_ARGUMENTS>` são os argumentos copiados no item '2.' e `PROGRAMA.jar` é o nome do programa a ser executado.  
+**Obs. 2**: programas Java com JavaFX, ou qualquer outro que tem argumentos no Java Application, precisam ser executados desta maneira.  
