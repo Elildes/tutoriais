@@ -91,39 +91,47 @@ No Eclipse:
 12) Apply e Close  
 
 **Criar um projeto JavaFX para testar se foi instalado corretamente**:  
-1) File
-2) New
-3) Project ou Other
-4) JavaFX
-5) JavaFX Project
-6) Next
-7) Colocar o nome do projeto
-8) Next
-9) Libraries
-10) Classpath
-11) Add library (adicionar a biblioteca JavaFX)
-12) User library
-13) Next
-14) Escolher a biblioteca JavaFX (que foi incluída no Eclipse. Ex.: JavaFX11)
-15) Finish
-Obs.: todos os arquivos JARs deverão aparecer.
-16) Next
-17) Finish
-Obs.: pastas criadas:
-NomeProjeto
-. src
-.. application 
-... Main.java
-... application.css (não será usada)
-. JRE System...
-. JavaFX11 (nome criado anteriormente: todos arquivos JARs importados)
-. build.fxbuild
-Obs.: no projeto deverá ter somente uma biblioteca JavaFX. Ex.: JavaFX11.
-Se você esqueceu de adicionar a biblioteca JavaFX (itens de '9)' a '14'), pode adidionar:
-a) Botão direito do mouse em cima do projeto
-b) Build Path
-c) Add Libraries
-d) Idem itens de '9)' a '14' 
+1) File  
+2) New  
+3) Project ou Other    
+4) JavaFX  
+5) JavaFX Project  
+6) Next  
+7) Colocar o nome do projeto  
+8) Next  
+9) Libraries  
+10) Classpath  
+11) Add library (adicionar a biblioteca JavaFX)  
+12) User library  
+13) Next  
+14) Escolher a biblioteca JavaFX (que foi incluída no Eclipse. Ex.: JavaFX11)  
+15) Finish  
+Obs.: todos os arquivos JARs deverão aparecer.  
+16) Next  
+17) Finish  
+Obs.: pastas criadas:  
+NomeProjeto  
+. src  
+.. application  
+... Main.java  
+... application.css (não será usada)  
+. JRE System...  
+. JavaFX11 (nome criado anteriormente: todos arquivos JARs importados)  
+. build.fxbuild  
+
+**Configurar o projeto com o JavaFx, caso não tenha adicionado a biblioteca Java FX conf. itens `9)` a `14)`**
+
+Obs.: Também serve para adicionar o JavaFX aos projetos recem imprtados ao Eclipse.  
+Obs.: no projeto deverá ter somente uma biblioteca JavaFX. Ex.: JavaFX11.  
+
+a) Botão direito do mouse em cima do projeto  
+b) Build Path  
+c) Configure Build parth  
+d) Libraries  
+e) Idem itens de '9)' a '14'  
+
+**Executar a aplicação JavaFX**
+
 18) Executar o projeto: Main.java (botão direto) > Run As > Java Application
 19) Irá aparecer um erro porque a 'Run' (Main.java) que foi criado ainda não está configurada.
 Configurar o Run (Main.java) para poder usar os módulos do JavaFX:
