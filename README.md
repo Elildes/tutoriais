@@ -10,6 +10,9 @@ Como como criar atalhos de aplicativios na área de trabalho do Linux.
 [Eclipse - Tutorial](https://github.com/Elildes/tutoriais/blob/master/Eclipse.md):
 Importar Projetos. Executar App Java/JavaFX (com argumentos).
 
+[Eclipse - JavaFX](https://github.com/Elildes/tutoriais/blob/master/Eclipse-JavaFX.md):
+JavaFX: instalar, testar. SceneBuilder: baixar, instalar e executar.
+
 [IRPF 2020 - Imposto de Renda 2020](https://github.com/Elildes/tutoriais/blob/master/irpf-2020):
 Veja como fazer a instalação do programa IRPF2020 - Imposto de Renda de Pessoa Física com o OpenJDK (java open source).
 
