@@ -22,7 +22,7 @@ Comandos usados para instalar programas com extens]oes do tipo:  .tar.gz, tar.bz
 [JAVA - Tutorial para instalar e configurar o Java no Linux e Windows](https://github.com/Elildes/tutoriais/blob/master/java.md):
 Instalação, configuração, JAVA_HOME, JRE_HOME e mudança de versão do Java no Linux e Winodws.
 
-[Maven - Instalação do Maven no Linux](https://github.com/Elildes/tutoriais/blob/master/maven.md):
+[Maven - Instalação do Maven no Linux e Windows](https://github.com/Elildes/tutoriais/blob/master/maven.md):
 instalar o gerenciador de projetos Java Maven em uma máquina com Sistema Operacional Linux via SDKMan.
 
 [SFTP - Servidor Linux para transferência segura de arquivos](https://github.com/Elildes/tutoriais/blob/master/sftp-server.md):
