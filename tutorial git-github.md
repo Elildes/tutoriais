@@ -1,9 +1,9 @@
-----TUTORIAL GIT HUB----
+# TUTORIAL GIT HUB
 
 Documentação:
-Fonte: https://git-scm.com/book/pt-br/v1/Primeiros-passos-Sobre-Controle-de-Vers%C3%A3o
-Fonte: https://git-scm.com/book/pt-br/v1/Primeiros-passos-Configura%C3%A7%C3%A3o-Inicial-do-Git
-Fonte: https://www.youtube.com/watch?v=udw3J335ZHo (Curso Git - LCM Aquino)
+[Fonte 01](https://git-scm.com/book/pt-br/v1/Primeiros-passos-Sobre-Controle-de-Vers%C3%A3o)  
+[Fonte 02](https://git-scm.com/book/pt-br/v1/Primeiros-passos-Configura%C3%A7%C3%A3o-Inicial-do-Git)  
+[Fonte 03](https://www.youtube.com/watch?v=udw3J335ZHo (Curso Git - LCM Aquino)  
 
 
 # Gerar e adicionar nova chave SSH - Linux  
@@ -69,7 +69,7 @@ Clique em Adicionar SSH KEY
 Confirmar o acesso a conta  
 
 
-I) Criar novo repositório (direto do site do git hub):
+# I) Criar novo repositório (direto do site do git hub):  
 > + (canto direito superior)
 > New repository
 > Repository name
@@ -80,23 +80,23 @@ I) Criar novo repositório (direto do site do git hub):
 > Add a licence (adicionar uma licença se tiver)
 > Creat repository
 
-1) Configuração inicial do Git:
+# 1) Configuração inicial do Git:  
 
-1.1) Criar novos usuário/email (identidade):
+## 1.1) Criar novos usuário/email (identidade):  
 > git config --global user.email "you@example.com"
 > git config --global user.name "Your Name"
 Obs.1: --global: caso vc precise definir outros usuarios/emails para outros projetos não precisa digitar --global.
 Obs.2: Usando --global, basta fazer isso apenas uma vez, pois o Git usará esta identidade toda vez que o sistema for usado.
 Obs.3: A identidade deverá ser criada após instalar o o Git (todos commits usam este usuário).
 
-1.2) Editor padrão:
+## 1.2) Editor padrão:  
 . Para configurar o editor de texto padrão que será utilizado no Git:
 > git config --global <nome_editor>
 . Ex.: core.editor emacs ou core.editor="C:\\Program Files\\Sublime Text 3\\subl.exe" -w
 
-2) Obter um repositório/projeto git:
+# 2) Obter um repositório/projeto git:  
 
-2.1) Primeira forma (do pc para o Git):
+## 2.1) Primeira forma (do pc para o Git):  
   Inicializar um repositório em uma pasta existente:
 . Ir para a pasta a ser monitorada e digitar:
 > git init (inicializar: dentro da pasta do projeto)
@@ -106,7 +106,7 @@ Obs.3: A identidade deverá ser criada após instalar o o Git (todos commits usa
 > git commit -m "Nome_da_Mensagem"
 > git push (envia as alterações feitas ao repositório remoto), ou:
 
-2.2) Segunda forma (baixar/clonar do git para o pc):
+## 2.2) Segunda forma (baixar/clonar do git para o pc):  
 . No seu pc, abra o terminal e vá até a pasta que queira baixar o repositório
 . Copiar a url do repositório >>> https://github.com/Elildes/ufrn-2019.1-itp-projeto.git
 . No PC (programa do git já instalado: com o terminal entra na pasta a ser baixado)
@@ -120,9 +120,9 @@ servidor remoto, você deve adicioná-lo com:
 > git remote add origin <servidor>
 
 Obs.02:
-> git fork <URL do github>  (baixa o repositório de terceiros).????????
+> git fork <URL do github>  (baixa o repositório de terceiros).????????  
 
-3) Gravando alterações no repositório  - Adicionar/enviar ao GitHub (enviar atualizações):
+# 3) Gravando alterações no repositório  - Adicionar/enviar ao GitHub (enviar atualizações):  
 > git add <file.ext> (adiciona um arquivo) ou:
 > git add * (todos arquivos)
 > git commit -m "Mensagem xxx" (empacota as alterações feitas no repositório baixado)
