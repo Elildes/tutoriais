@@ -2,7 +2,7 @@
 
 Documentação:  
 [Documentation](https://git-scm.com/doc)  
-[Curso Git Porf. Aquino](https://www.youtube.com/watch?v=udw3J335ZHo (Curso Git - LCM Aquino)  
+[Curso Git Porf. Aquino](https://www.youtube.com/watch?v=udw3J335ZHo)
 
 
 # Gerar e adicionar nova chave SSH - Linux  
