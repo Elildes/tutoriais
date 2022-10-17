@@ -1,9 +1,8 @@
 # TUTORIAL GIT HUB
 
 Documentação:  
-[Fonte 01](https://git-scm.com/book/pt-br/v1/Primeiros-passos-Sobre-Controle-de-Vers%C3%A3o)  
-[Fonte 02](https://git-scm.com/book/pt-br/v1/Primeiros-passos-Configura%C3%A7%C3%A3o-Inicial-do-Git)  
-[Fonte 03](https://www.youtube.com/watch?v=udw3J335ZHo (Curso Git - LCM Aquino)  
+[Documentation](https://git-scm.com/doc)  
+[Curso Git Porf. Aquino](https://www.youtube.com/watch?v=udw3J335ZHo (Curso Git - LCM Aquino)  
 
 
 # Gerar e adicionar nova chave SSH - Linux  
