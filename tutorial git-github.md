@@ -18,8 +18,9 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 . Reescreva outra chave (nome padronizado), ou desconsidere este passo e aperte ENTER, para salvar o nome da chave como 'id_ed25519':  
 /home/elildes/.ssh/id_ssh_elildes  
 > digite a senha (ssh)  
+> digite novamente a senha (ssh)  
 
-. Adicionar a chave SSH ao agente ssh  
+. Adicionar a chave SSH ao agente ssh (gerenciador de chaves):  
 sudo -s -H eval "$(ssh-agent -s)"  
 
 . Adicionar a chave privada SSH ao agente ssh e armazenar no chaveiro:  
@@ -34,7 +35,42 @@ ls -al ~/.ssh
 
 . Certificar se o agente ssh estar em execução:  
 eval "$(ssh-agent -s)"  
-> Agent pid 59566  
+> Agent pid xxx  
+
+
+# Gerar e adicionar nova chave SSH - Windows  
+
+[Fonte](https://docs-github-com.translate.goog/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=windows&_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp)
+
+. Verificar se existe chaves:  
+ls -al ~/.ssh  
+
+. No terminal digite:  
+ssh-keygen -t ed25519 -C "your_email@example.com"  
+
+. Reescreva outra chave (nome padronizado), ou desconsidere este passo e aperte ENTER, para salvar o nome da chave como 'id_ed25519':  
+ /c/Users/elildes/.ssh/id_ssh_elildes  
+> digite a senha (ssh)  
+> digite novamente a senha (ssh)  
+
+. Adicionar a chave SSH ao agente ssh (gerenciador de chaves):  
+exec ssh-agent bash  
+eval "$(ssh-agent -s)"  
+
+**Obs.**: pode ser necessário usar um comando diferente. Por exemplo, talvez seja necessário usar o acesso sudo -s -Hantes de iniciar o agente ou usar exec ssh-agent bashou exec ssh-agent zshpara executar o agente.  
+
+. Adicionar a chave privada SSH ao agente ssh e armazenar no chaveiro:  
+ssh-add --apple-use-keychain ~/.ssh/id_ssh_elildes  
+
+. Se der erro digite:  
+**Obs.**: acessar o link fonte.  
+
+. Verificar se as chaves foram criadas:  
+ls -al ~/.ssh  
+
+. Certificar se o agente ssh estar em execução:  
+eval "$(ssh-agent -s)"  
+> Agent pid xxx  
 
 
 # Adicionar a chave SSH a conta no GitHub - Navegador Web
@@ -48,11 +84,9 @@ ls -al ~/.ssh
 pbcopy < ~/.ssh/id_ssh_elildes.pub  
 **Obs.**: copia o conteúdo do arquivo 'id_ssh_elildes.pub'  
 
-. Se der erro:  
+. Se der erro, copiar direto do terminal a chave pública.  
 cat < ~/.ssh/id_ssh_elildes.pub  
-
-. Copiar direto do terminal a chave pública. Ex.:  
-ssh-ed25519 BBBBC3NzaC1lZPA1NTE5CCCCILqKHEGW0WJjl456uwPuI9JblYEtPqLLjbfyPthxWEy4 exemplo@seu.email  
+**Ex.**:  ssh-ed25519 BBBBC3NzaC1lZPA1NTE5CCCCILqKHEGW0WJjl456uwPuI9JblYEtPqLLjbfyPthxWEy4 exemplo@seu.email  
 
 . No site do GitHub:  
 Clicar na foto de perfil  
@@ -61,7 +95,8 @@ Acesso >  chaves SSH e GPG > Nova chave SSH ou Adicionar chave SSH
 Titulo para uma nova etiqueta descritiva (nome da chave)  
 Iipo de chave: autenticação ou assinatura (chave de autenticação)  
 
-**Obs.**: tipo de chave assinatura assina tags e commits localmente, para dar autentiidade para outras pessoas do que foi feito. Fonte: https://docs-github-com.translate.goog/pt/authentication/managing-commit-signature-verification/about-commit-signature-verification?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp  
+**Obs.**: tipo de chave assinatura assina tags e commits localmente, para dar autentiidade para outras pessoas do que foi feito.  
+[Fonte:](https://docs-github-com.translate.goog/pt/authentication/managing-commit-signature-verification/about-commit-signature-verification?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp)  
 
 Colar a chave no campo 'Chave' (key)  
 Clique em Adicionar SSH KEY  
