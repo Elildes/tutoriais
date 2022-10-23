@@ -104,21 +104,22 @@ Confirmar o acesso a conta
 
 
 # I) Criar novo repositório (direto do site do git hub):  
-> + (canto direito superior)
-> New repository
-> Repository name
-> Description
-> Public/Private
-> Initialize... (clonar o repositório imediatamente no PC. Pule esta etapa se estiver 'importando')
-> Add .gitignore (por padrão 'não marcar': git vai ignorar: informações/ferramentas do PC que não será enviado ao git): normalmente adiciona a ferramenta que o projeto foi feito (C, java..)
-> Add a licence (adicionar uma licença se tiver)
-> Creat repository
+Clicar em + (canto direito superior)  
+`New repository`  
+`Repository name`  
+`Description`  
+`Public/Private`  
+`Initialize...` (clonar o repositório imediatamente no PC. Pule esta etapa se estiver 'importando')  
+`Add .gitignore` (por padrão não marcar: o git vai ignorar:  informações/ferramentas do PC que não será enviado ao git): normalmente adiciona a ferramenta que o projeto foi feito (C, java..)  
+`Add a licence` (adicionar uma licença se tiver)  
+`Creat repository`  
 
 # 1) Configuração inicial do Git:  
 
 ## 1.1) Criar novos usuário/email (identidade):  
 `git config --global user.email "you@example.com"`  
 `git config --global user.name "Your Name"`  
+
 **Obs.1**: --global: caso vc precise definir outros usuarios/emails para outros projetos não precisa digitar --global.  
 **Obs.2**: Usando --global, basta fazer isso apenas uma vez, pois o Git usará esta identidade toda vez que o sistema for usado.  
 **Obs.3**: A identidade deverá ser criada após instalar o o Git (todos commits usam este usuário).  
@@ -144,6 +145,11 @@ Confirmar o acesso a conta
 `git push -u origin master`  
 . Ou:   
 `git push --set-upstream origin master`  
+
+. Se o repositório já existe no pc:  
+`git remote add origin https://github.com/_nome_repositorio.git`  
+`git branch -M master`  
+`git push -u origin master`  
 
 ## 2.2) Segunda forma (baixar/clonar do git para o pc):  
 . No seu pc, abra o terminal e vá até a pasta que queira baixar o repositório  
