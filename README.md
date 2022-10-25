@@ -31,6 +31,9 @@ instalar o gerenciador de projetos Java Maven em uma máquina com Sistema Operac
 [SFTP - Servidor Linux para transferência segura de arquivos](https://github.com/Elildes/tutoriais/blob/master/sftp-server.md):
 Como instalar e configurar um servidor Linux SFTP.
 
+[Spring Boot + PostgreSQL](https://github.com/Elildes/tutoriais/blob/master/spring-boot-postgresql.md):
+Criar um projeto Spring Boot com PostgreSQL (gerenciador de banco de dados).
+
 [Windows - Como corrigir o Windows pelo CMD na inicialização](https://github.com/Elildes/tutoriais/blob/master/wine.md):
 Como instalar e executar programas do Windows no Linux com Wine.
 
