@@ -1,8 +1,8 @@
 
 
-## Criar o projeto Spring Boot:  
+# Criar um projeto Spring Boot:  
 
-. Acessar o site (Sprinf Boot Initialize)[https://start.spring.io/] e preencher o formulário conforme a necessidade.  
+. Acessar o site (Spring Boot Initialize)[https://start.spring.io/] e preencher o formulário conforme a necessidade do projeto.  
 
 . Caso não queira adicionar as dependência sno projeto, poderá adicionar depois ao projeto, através do arquivo `pom.xml`.  
 
