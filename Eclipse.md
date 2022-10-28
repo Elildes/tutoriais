@@ -11,6 +11,7 @@ Fonte 2: https://www.youtube.com/watch?v=KC-mZ5Ew_jE&ab_channel=IvanSalvadori
 4. Atualizar/sincronizar o projeto com o Repositório Remoto  
 5. Gerando o JAR (bibliotecas/projeto) pelo Eclipse  
 6. Como importar uma biblioteca no Eclipse?  
+7. Principais Plugins do Eclipse.  
 
 ### Importar ou Clonar o Projeto
 
@@ -92,7 +93,11 @@ No eclipse para importar um `jar` você precisa:
 
 **Obs.**: você pode copiar todos para dentro de uma pasta dentro de seu projeto.  
 
+# Principais Plugins do Eclipse  
 
+. [m2e-wtp](https://download.eclipse.org/m2e-wtp/releases/neon/)
+ O pluguin m2e-wtp é usado para desenvolvimento Java EE e Web que fornece uma integração entre Maven Integration for Eclipse (aka m2e) e o Eclipse Web Tools Project (WTP).  
+ 
 
 
 
