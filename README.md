@@ -8,7 +8,7 @@ Segue a lista dos tutoriais:
 Como como criar atalhos de aplicativios na área de trabalho do Linux.
 
 [Eclipse - Tutorial](https://github.com/Elildes/tutoriais/blob/master/Eclipse.md):
-Importar Projetos. Executar App Java/JavaFX (com argumentos).
+Importar/exportar Projetos, códigos e bibliotecas. Executar App Java/JavaFX (com argumentos), etc
 
 [Eclipse - JavaFX](https://github.com/Elildes/tutoriais/blob/master/Eclipse-JavaFX.md):
 JavaFX: instalar, testar. SceneBuilder: baixar, instalar e executar.
