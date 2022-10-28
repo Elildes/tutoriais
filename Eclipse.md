@@ -9,7 +9,8 @@ Fonte 2: https://www.youtube.com/watch?v=KC-mZ5Ew_jE&ab_channel=IvanSalvadori
 2. Adicionar o projeto clonado ao Eclipse  
 3. Reconfigurar o novo ambiente DEV (path)  
 4. Atualizar/sincronizar o projeto com o Repositório Remoto  
-
+5. Gerando o JAR (bibliotecas/projeto) pelo Eclipse  
+6. Como importar uma biblioteca no Eclipse?  
 
 ### Importar ou Clonar o Projeto
 
