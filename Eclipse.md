@@ -70,3 +70,29 @@ Fonte: https://www.youtube.com/watch?v=lwOFg-W7OSM&ab_channel=BoostMyTool
 5. Execute o programa: `java <VM_ARGUMENTS> -jar PROGRAMA.jar`  
 **Obs. 1**: `<VM_ARGUMENTS>` são os argumentos copiados no item '2.' e `PROGRAMA.jar` é o nome do programa a ser executado.  
 **Obs. 2**: programas Java com JavaFX, ou qualquer outro que tem argumentos no Java Application, precisam ser executados desta maneira.  
+
+# Gerando o JAR (bibliotecas/projeto) pelo Eclipse  
+
+. Clique com o botão direito em cima do nome do seu projeto.  
+. Selecione a opção `Export`.  
+. Na tela `Export`, selecione a opção `Java`> `JAR file` e aperte o botão `Next`.  
+. Selecione as pastas e arquivos a serem exportados.  
+. Na opção `JAR file`, selecione o local em que você deseja salvar o arquivo `JAR` e escolhe as demais opções, se for ocaso, então aperte `Next`.  
+. Na próxima tela, clique em `Next`, para mais detalhes, ou clique em `Finish`.  
+
+# Como importar uma biblioteca no Eclipse?
+
+No eclipse para importar um `jar` você precisa:
+
+. Clicar com o botão direito no projeto.  
+. Escolher `Build Path` > `Configure Build Path`.  
+. Vai abrir uma janela, nela você vai na aba `Libraries`.  
+. Agora basta clicar em `Add JARs...`  
+
+**Obs.**: você pode copiar todos para dentro de uma pasta dentro de seu projeto.  
+
+
+
+
+
+
