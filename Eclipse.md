@@ -75,12 +75,14 @@ Fonte: https://www.youtube.com/watch?v=lwOFg-W7OSM&ab_channel=BoostMyTool
 
 # Gerando o JAR (bibliotecas/projeto) pelo Eclipse  
 
-. Clique com o botão direito em cima do nome do seu `projeto`, caso for exportar um projeto, ou clique em cima do(s) `pacote(s)`, caso for exportar um ou mais pacote(s), ou ainda clique em cima do(s) `arquivo(s) de código(s)`, caso for exportar códigos.  
+. Clique com o botão direito em cima do nome do seu `projeto`.  
 . Selecione a opção `Export`.  
 . Na tela `Export`, selecione a opção `Java`> `JAR file` e aperte o botão `Next`.  
 . Selecione as pastas e arquivos a serem exportados.  
-. Na opção `JAR file`, selecione o local em que você deseja salvar o arquivo `JAR` e escolhe as demais opções, se for ocaso, então aperte `Next`.  
+. Na opção `JAR file`, selecione o local em que você deseja salvar o arquivo `JAR` e escolhe as demais opções, se for o caso, então aperte `Next`.  
 . Na próxima tela, clique em `Next`, para mais detalhes, ou clique em `Finish`.  
+
+**Obs.**:  caso queira exportar seu projeto, ou algumas pastas ou arquivos de códigos, no passo 3, escolha `Archive File`, para exportar o projeto, ou parte do projeto em um arquivo compactado, e siga da mesma forma dos passos seguintes descritos acima.  
 
 # Como importar uma biblioteca no Eclipse?
 
