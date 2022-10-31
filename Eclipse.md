@@ -89,7 +89,8 @@ No eclipse para importar um `jar` você precisa:
 . Clicar com o botão direito no projeto.  
 . Escolher `Build Path` > `Configure Build Path`.  
 . Vai abrir uma janela, nela você vai na aba `Libraries`.  
-. Agora basta clicar em `Add JARs...`  
+. Agora basta clicar em `Add External JARs`.  
+. Por fim, clique em `Apply and Close`.  
 
 **Obs.**: você pode copiar todos para dentro de uma pasta dentro de seu projeto.  
 
