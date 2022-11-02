@@ -1,6 +1,4 @@
-# Tutorial da IDE Eclipse
-
-## Passo a passo importar projeto do GitHub para o Eclipse
+# Tutorial da IDE Eclipse - Passo a passo importar projeto do GitHub para o Eclipse
 
 Fonte 1: https://www.youtube.com/watch?v=-IA9VivrY4c&ab_channel=AlexandreAtanes  
 Fonte 2: https://www.youtube.com/watch?v=KC-mZ5Ew_jE&ab_channel=IvanSalvadori  
