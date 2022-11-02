@@ -14,7 +14,7 @@ Fonte 2: https://www.youtube.com/watch?v=KC-mZ5Ew_jE&ab_channel=IvanSalvadori
 7. Como importar uma biblioteca no Eclipse?  
 8. Principais Plugins do Eclipse.  
 
-## Criar um novo projeto no Eclipse e enviar ao repositório GitHub
+## 1. Criar um novo projeto no Eclipse e enviar ao repositório GitHub
 
 1. No Git Hub crie um projeto em branco e não adicione nenhum arquivo.  
 
