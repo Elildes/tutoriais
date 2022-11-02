@@ -5,13 +5,82 @@
 Fonte 1: https://www.youtube.com/watch?v=-IA9VivrY4c&ab_channel=AlexandreAtanes  
 Fonte 2: https://www.youtube.com/watch?v=KC-mZ5Ew_jE&ab_channel=IvanSalvadori  
 
-1. Clonar o repositório do GitHub ou Importar de uma pasta com o projeto já clonado  
-2. Adicionar o projeto clonado ao Eclipse  
-3. Reconfigurar o novo ambiente DEV (path)  
-4. Atualizar/sincronizar o projeto com o Repositório Remoto  
-5. Gerando o JAR (bibliotecas/projeto) pelo Eclipse  
-6. Como importar uma biblioteca no Eclipse?  
-7. Principais Plugins do Eclipse.  
+1. Criar um novo projeto no Eclipse e enviar ao repositório GitHub.  
+2. Clonar o repositório do GitHub ou Importar de uma pasta com o projeto já clonado  
+3. Adicionar o projeto clonado ao Eclipse  
+4. Reconfigurar o novo ambiente DEV (path)  
+5. Atualizar/sincronizar o projeto com o Repositório Remoto  
+6. Gerando o JAR (bibliotecas/projeto) pelo Eclipse  
+7. Como importar uma biblioteca no Eclipse?  
+8. Principais Plugins do Eclipse.  
+
+## Criar um novo projeto no Eclipse e enviar ao repositório GitHub
+
+1. No Git Hub crie um projeto em branco e não adicione nenhum arquivo.  
+
+2. Criar o projeto no Eclipse:  
+
+`File` > `New` > `Maven Project`  
+Na janela `New Maven project:  
+Selecionar a opção `Create a simple project...`  
+Desmarcar a opção `Use default Workspace location` e digitar o local do repositório e nome da pasta onde o projeto será salvo.  
+Cliclar em `next`.  
+Na próxima janela preencha os dados do arquivo `pom.xml`. Ex.: `Group Id, Artefact Id`, etc.  
+Por fim, clicar em `finish`.  
+
+**Obs.**: fazer as devidas alterações no arquivo `pom.xml` ou devidas configurações das dependências do projeto.  
+
+3. Criar o repositório local:  
+
+Na aba `Git Repositories`:  
+
+Na janela `Create a New Git Reository`:  
+Na opção `Repository directory`: digitar o local da pasta e nome do projeto, onde o repositório será iniciado/salvo.  
+Na opção `Default branch name`: digitar o name da branch padrão. Ex. `master`.  
+Por fim, clique em `create`.  
+
+**Obs.**: verifique que junto ao nome do projeto aparecerá o nome do diretótio seguido da branch principal.  
+
+4. Gerar um token https de acesso:  
+
+Ir no repositório do Git Hub.  
+Clicar na foto de perfil (canto direito superior).  
+Clicar em `Settings` > `Developer settings`.  
+Clicar em `Personal access tokens` > `Tokens (classic)`.  
+Clicar em `Generate new token` > `Generate new token (classic)`.  
+Em note: colocar um nome que identifica o token.  
+Em `Experition`: escolher o prazo de validade do token.  
+Em `Select scopes`: marcar os tipos de acesso do token.  
+clicar em `Generate token`.  
+Por fim, copiar o token.  
+
+5.1 Enviar o repositório ao Git Hub pelo Eclipse:  
+
+[Fonte](https://www.youtube.com/watch?v=jeIqjmlLiPI&ab_channel=GotasdeTecnologia)  
+
+Clicar com o botão diretio do mouse no projeto.  
+Clicar em `Team ` > `Commit`.  
+Em `Unstage Changes`, clicar em `++`, para adicionar todas as alterações.  
+Em `Commit Message`, escreve uma frase que irá identidicar o commit.  
+Clique em `Push head...`.  
+
+Irá abrir a tela `Destination Git Repository`:
+Em `URI`: digitar o endereço do repositório (criado no passo `1.`).  
+Em `Host`: será preenchido automaticamente.  
+Em `User`: digitar o usuário do Git Hub.  
+Em `Paswword`: digitar o token copiado.  
+Clicar em `Preview` > `Push` > `Close`.  
+
+5.2 Enviar o repositório ao Git Hub pelo terminal:  
+
+git add *  
+git commit -m "first commit"  
+git branch -M master  
+git remote add origin <nome_repositorio.git>  
+git push -u origin master  
+
+**Obs.**: se solicitar a senha, digite o token.  
+
 
 ### Importar ou Clonar o Projeto
 
