@@ -6,15 +6,15 @@ Fonte 1: https://www.youtube.com/watch?v=-IA9VivrY4c&ab_channel=AlexandreAtanes
 Fonte 2: https://www.youtube.com/watch?v=KC-mZ5Ew_jE&ab_channel=IvanSalvadori  
 
 1. Criar um novo projeto no Eclipse e enviar ao repositório GitHub.  
-2. Clonar o repositório do GitHub ou Importar de uma pasta com o projeto já clonado  
-3. Adicionar o projeto clonado ao Eclipse  
-4. Reconfigurar o novo ambiente DEV (path)  
-5. Atualizar/sincronizar o projeto com o Repositório Remoto  
+2. Importar ou Clonar o Projeto  
+3. Reconfigurar o novo ambiente DEV (path)  
+4. Atualizar, mesclar, comitar, etc o projeto com o repositório remoto  
+5. Executar programa Java e JavaFX com arquivo executável .jar  
 6. Gerando o JAR (bibliotecas/projeto) pelo Eclipse  
 7. Como importar uma biblioteca no Eclipse?  
 8. Principais Plugins do Eclipse.  
 
-## 1. Criar um novo projeto no Eclipse e enviar ao repositório GitHub
+# 1. Criar um novo projeto no Eclipse e enviar ao repositório GitHub
 
 1. No Git Hub crie um projeto em branco e não adicione nenhum arquivo.  
 
@@ -82,9 +82,9 @@ git push -u origin master
 **Obs.**: se solicitar a senha, digite o token.  
 
 
-### Importar ou Clonar o Projeto
+# 2. Importar ou Clonar o Projeto
 
-**Clonar projeto**
+**2.1 Clonar projeto**
 1. `File` > `Import` > `Git` > `Projects from Git` > `Next`  
 2. `Clone URI`  
 3. `Next`: adicionar URL do projeto do Git:  
@@ -96,14 +96,15 @@ git push -u origin master
 . `Destination`: colocar o diretório onde o repositótio será clonado (salvo)  
 . `Projects`: `Import all existing Eclipse project...`  
 5. `Finish`  
-Adicionar o projeto clonado ao Eclipse:  
+
+**Adicionar o projeto clonado ao Eclipse**
 6. `Git Repository` (`Windows` > `Show view` > `Other` > `Git` > `Git Repositories`  
 7. `Botão direito do mouse no repositório`  
 8. `Import Projects...`  
 9. `Finish`  
 **Obs.:** aguardar a importação (demora um pouco dependendo projeto).  
 
-**Projeto já clonado**
+**2.2 Projeto já clonado**
 1. `File` > `Import` > `Git` > `Projects from Git` > `Existing local repository` (projeto já clonado) > `Next`  
 2. `Add` > `Directory` (URL do prjeto no PC) > `Add`  
 3. `...`  
@@ -116,21 +117,21 @@ Adicionar o projeto clonado ao Eclipse:
 **Obs.:** aguardar a importação (demora um pouco dependendo projeto).  
 
 
-**Reconfigurar o novo ambiente DEV (path)**  
+# 3. Reconfigurar o novo ambiente DEV (path)**  
 4. `Botão direito no projeto`  
 5. `Properties`  
 6. `Java Build Path: JRE > Edit: colocar a JVM necessária > Finish`  
 **Obs.:** verificar mais opções, se necessário. Ex.: Server, Target Runtimes.
 
 
-## Atualizar, mesclar, comitar, etc o projeto com o repositório remoto
+# 4. Atualizar, mesclar, comitar, etc o projeto com o repositório remoto
 1. `Botão direito no projeto`  
 2. `Team`  
 3. `Escolher a opção desejada.` Ex.: `commit`, `push`, `pull`, etc  
 
 Fonte: https://douglasgaspar.wordpress.com/2021/01/28/utilizacao-do-git-em-ambiente-java-com-ide-eclipse/  
 
-## Executar programa Java e JavaFX com arquivo executável .jar
+# 5. Executar programa Java e JavaFX com arquivo executável .jar
 
 Fonte: https://www.youtube.com/watch?v=lwOFg-W7OSM&ab_channel=BoostMyTool
 
@@ -142,7 +143,7 @@ Fonte: https://www.youtube.com/watch?v=lwOFg-W7OSM&ab_channel=BoostMyTool
 **Obs. 1**: `<VM_ARGUMENTS>` são os argumentos copiados no item '2.' e `PROGRAMA.jar` é o nome do programa a ser executado.  
 **Obs. 2**: programas Java com JavaFX, ou qualquer outro que tem argumentos no Java Application, precisam ser executados desta maneira.  
 
-# Gerando o JAR (bibliotecas/projeto) pelo Eclipse  
+# 6. Gerando o JAR (bibliotecas/projeto) pelo Eclipse  
 
 . Clique com o botão direito em cima do nome do seu `projeto`.  
 . Selecione a opção `Export`.  
@@ -153,7 +154,7 @@ Fonte: https://www.youtube.com/watch?v=lwOFg-W7OSM&ab_channel=BoostMyTool
 
 **Obs.**:  caso queira exportar seu projeto, ou algumas pastas ou arquivos de códigos, no passo 3, escolha `Archive File`, para exportar o projeto, ou parte do projeto em um arquivo compactado, e siga da mesma forma dos passos seguintes descritos acima.  
 
-# Como importar uma biblioteca no Eclipse?
+# 7. Como importar uma biblioteca no Eclipse?
 
 No eclipse para importar um `jar` você precisa:
 
@@ -165,7 +166,7 @@ No eclipse para importar um `jar` você precisa:
 
 **Obs.**: você pode copiar todos para dentro de uma pasta dentro de seu projeto.  
 
-# Principais Plugins do Eclipse  
+# 8. Principais Plugins do Eclipse  
 
 . [m2e-wtp](https://download.eclipse.org/m2e-wtp/releases/neon/)
  O pluguin m2e-wtp é usado para desenvolvimento Java EE e Web que fornece uma integração entre Maven Integration for Eclipse (aka m2e) e o Eclipse Web Tools Project (WTP).  
