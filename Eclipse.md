@@ -54,7 +54,7 @@ Em `Select scopes`: marcar os tipos de acesso do token.
 clicar em `Generate token`.  
 Por fim, copiar o token.  
 
-5.1 Enviar o repositório ao Git Hub pelo Eclipse:  
+4.1 Enviar o repositório ao Git Hub pelo Eclipse:  
 
 [Fonte](https://www.youtube.com/watch?v=jeIqjmlLiPI&ab_channel=GotasdeTecnologia)  
 
@@ -71,7 +71,7 @@ Em `User`: digitar o usuário do Git Hub.
 Em `Paswword`: digitar o token copiado.  
 Clicar em `Preview` > `Push` > `Close`.  
 
-5.2 Enviar o repositório ao Git Hub pelo terminal:  
+4.2 Enviar o repositório ao Git Hub pelo terminal:  
 
 git add *  
 git commit -m "first commit"  
@@ -118,9 +118,9 @@ git push -u origin master
 
 
 # 3. Reconfigurar o novo ambiente DEV (path)**  
-4. `Botão direito no projeto`  
-5. `Properties`  
-6. `Java Build Path: JRE > Edit: colocar a JVM necessária > Finish`  
+1. `Botão direito no projeto`  
+2. `Properties`  
+3. `Java Build Path: JRE > Edit: colocar a JVM necessária > Finish`  
 **Obs.:** verificar mais opções, se necessário. Ex.: Server, Target Runtimes.
 
 
@@ -129,7 +129,7 @@ git push -u origin master
 2. `Team`  
 3. `Escolher a opção desejada.` Ex.: `commit`, `push`, `pull`, etc  
 
-Fonte: https://douglasgaspar.wordpress.com/2021/01/28/utilizacao-do-git-em-ambiente-java-com-ide-eclipse/  
+[Fonte](https://douglasgaspar.wordpress.com/2021/01/28/utilizacao-do-git-em-ambiente-java-com-ide-eclipse/)  
 
 # 5. Executar programa Java e JavaFX com arquivo executável .jar
 
