@@ -3,8 +3,8 @@
 **Índice**  
 
 1. [Abrir o SQL Shell (psql)](#abrirshellpsql)
-2. Principais comandos do shell psql
-3. Acessar os aplicativos do PostgreSQL
+2. [Principais comandos do shell psql](#comandosshellpsql)
+3. [Acessar os aplicativos do PostgreSQL](#apppostgresql)
 
 <div id='abrirshellpsql'/>
 
@@ -22,6 +22,8 @@ Port [5432]:
 Username [postgres]:  
 ```
 
+<div id='comandosshellpsql'/>
+
 ## 2. Principais comandos do shell psql
 
 ```java
@@ -30,6 +32,8 @@ postgres=#	// indica superusuário.
 ctl + z		// parar.  
 \q			// sair (volta p/ o usuário postgres.  
 ```
+
+<div id='apppostgresql'/>
 
 ## 3. Acessar os aplicativos do PostgreSQL
 
