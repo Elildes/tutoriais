@@ -28,8 +28,7 @@ Instalação, configuração, JAVA_HOME, JRE_HOME e mudança de versão do Java 
 [Maven - Instalação do Maven no Linux e Windows](https://github.com/Elildes/tutoriais/blob/master/maven.md):
 instalar o gerenciador de projetos Java Maven em uma máquina com Sistema Operacional Linux via SDKMan.
 
-[PostgreSQL - Gerenciador de banco de dados]
-(https://github.com/Elildes/tutoriais/blob/master/postgresql.md):
+[PostgreSQL - Gerenciador de banco de dados](https://github.com/Elildes/tutoriais/blob/master/postgresql.md):
 Como usar o PostegreSQL para manipular banco de dados.
 
 [SFTP - Servidor Linux para transferência segura de arquivos](https://github.com/Elildes/tutoriais/blob/master/sftp-server.md):
