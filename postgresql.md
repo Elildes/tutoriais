@@ -1,8 +1,12 @@
 # Usar o servidor do banco de dados PostgreSQL no Windows
 
-1. Abrir o SQL Shell (psql)
+**Índice**  
+
+1. [Abrir o SQL Shell (psql)](#abrirshellpsql)
 2. Principais comandos do shell psql
 3. Acessar os aplicativos do PostgreSQL
+
+<div id='abrirshellpsql'/>
 
 ## 1. Abrir o SQL Shell (psql)
 
