@@ -183,4 +183,4 @@ No eclipse para importar um `jar` você precisa:
 
 . **Darkest Dark** Darkest Dark Theme with DevStyle é um plugin gratuito que fornece um conjunto aprimorado de experiências para o Eclipse. Incluído: Tema.  
 . [m2e-wtp](https://download.eclipse.org/m2e-wtp/releases/neon/)
- O pluguin m2e-wtp é usado para desenvolvimento Java EE e Web que fornece uma integração entre Maven Integration for Eclipse (aka m2e) e o Eclipse Web Tools Project (WTP).  
+ O pluguin m2e-wtp já vem instalado em algumas versões do Eclipse. É usado para desenvolvimento Java EE e Web que fornece uma integração entre Maven Integration for Eclipse (aka m2e) e o Eclipse Web Tools Project (WTP).  
