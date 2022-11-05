@@ -17,15 +17,6 @@ Documentação:
 
 [Fonte](https://docs-github-com.translate.goog/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp)
 
-Caso o `Cliente OpenSSH` não esteja ativado, fazer o seguinte:  
-```
-Clicar na tecla Windows.
-Configurações.
-Aplicativos.
-Aplicativos e recursos: Recursos opcionais.
-Procurar por Cliente OpenSSH e instalar.
-```
-
 . Verificar se existe chaves:  
 ls -al ~/.ssh  
 
@@ -62,6 +53,19 @@ eval "$(ssh-agent -s)"
 
 [Fonte](https://docs-github-com.translate.goog/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=windows&_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp)
 
+Pré-requisitos:
+	
+a. Caso o `Cliente OpenSSH` não esteja ativado, fazer o seguinte:  
+```
+Clicar na tecla Windows.
+Configurações.
+Aplicativos.
+Aplicativos e recursos: Recursos opcionais.
+Procurar por Cliente OpenSSH e instalar.
+```
+
+b. Certifique-se que o GitBash está instalado no seu computador.  
+
 . Verificar se existe chaves:  
 ls -al ~/.ssh  
 
@@ -69,7 +73,13 @@ ls -al ~/.ssh
 ssh-keygen -t ed25519 -C "your_email@example.com"  
 
 . Reescreva outra chave (nome padronizado), ou desconsidere este passo e aperte ENTER, para salvar o nome da chave como 'id_ed25519':  
- /c/Users/elildes/.ssh/id_ssh_elildes  
+ 
+/c/Users/elildes/.ssh/id_ssh_elildes  
+ou digite:  
+C:\Users\elildes/.ssh/id_ssh_elildes
+
+**Obs.**: veja o padrão do diretporio no terminal. Fin no CMD  e deu certo. 
+
 > digite a senha (ssh)  
 > digite novamente a senha (ssh)  
 
@@ -77,7 +87,13 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 exec ssh-agent bash  
 eval "$(ssh-agent -s)"  
 
-**Obs.**: pode ser necessário usar um comando diferente. Por exemplo, talvez seja necessário usar o acesso sudo -s -Hantes de iniciar o agente ou usar exec ssh-agent bashou exec ssh-agent zshpara executar o agente.  
+**Obs.**: pode ser necessário usar um comando diferente. Por exemplo, talvez seja necessário usar o acesso sudo -s -Hantes de iniciar o agente ou usar exec ssh-agent bash ou exec ssh-agent zsh para executar o agente.  
+
+**Obs.**: se mesmo assim não consehuir, configure 0 ssh-agenta a iniciar manualmente, pois assim que você executar, o serviço irá inciar.  
+Ex.:  
+`Get-Service -Name ssh-agent | Set-Service -StartupType Manual`  
+
+[Fonte](https://stackoverflow.com/questions/52113738/starting-ssh-agent-on-windows-10-fails-unable-to-start-ssh-agent-service-erro)  
 
 . Adicionar a chave privada SSH ao agente ssh e armazenar no chaveiro:  
 ssh-add --apple-use-keychain ~/.ssh/id_ssh_elildes  
