@@ -4,6 +4,13 @@ Documentação:
 [Documentation](https://git-scm.com/doc)  
 [Curso Git Porf. Aquino](https://www.youtube.com/watch?v=udw3J335ZHo)
 
+1. [Gerar e adicionar nova chave SSH - Linux](#gerarchavesshllinux)  
+2. Gerar e adicionar nova chave SSH - Windows  
+3. dicionar a chave SSH a conta no GitHub - Navegador Web  
+4. xx  
+
+
+<div id='gerarchavesshllinux/'>
 
 # Gerar e adicionar nova chave SSH - Linux  
 
@@ -103,7 +110,7 @@ Clique em Adicionar SSH KEY
 Confirmar o acesso a conta  
 
 
-# I) Criar novo repositório (direto do site do git hub):  
+# I) Criar novo repositório (direto do site do git hub)  
 Clicar em + (canto direito superior)  
 `New repository`  
 `Repository name`  
