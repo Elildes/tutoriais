@@ -4,14 +4,15 @@ Documentação:
 [Documentation](https://git-scm.com/doc)  
 [Curso Git Porf. Aquino](https://www.youtube.com/watch?v=udw3J335ZHo)
 
-1. [Gerar e adicionar nova chave SSH - Linux](#gerarchavesshllinux)  
-2. Gerar e adicionar nova chave SSH - Windows  
-3. dicionar a chave SSH a conta no GitHub - Navegador Web  
+1. [Gerar e adicionar nova chave SSH - Linux](#gerarchavesshlinux)
+2. [Gerar e adicionar nova chave SSH - Windows](#gerarchavesshwin)
+3. [Adicionar a chave SSH a conta no GitHub - Navegador Web](#addsshgithub)
 4. xx  
 
 
-<div id='gerarchavesshllinux/'>
+<div id='gerarchavesshlinux/'>
 
+	
 # Gerar e adicionar nova chave SSH - Linux  
 
 [Fonte](https://docs-github-com.translate.goog/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp)
@@ -45,6 +46,9 @@ eval "$(ssh-agent -s)"
 > Agent pid xxx  
 
 
+<div id='gerarchavesshwin/'>
+
+	
 # Gerar e adicionar nova chave SSH - Windows  
 
 [Fonte](https://docs-github-com.translate.goog/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=windows&_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp)
@@ -78,6 +82,9 @@ ls -al ~/.ssh
 . Certificar se o agente ssh estar em execução:  
 eval "$(ssh-agent -s)"  
 > Agent pid xxx  
+
+
+<div id='addsshgithub/'>
 
 
 # Adicionar a chave SSH a conta no GitHub - Navegador Web
