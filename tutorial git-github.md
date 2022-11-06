@@ -15,7 +15,8 @@ Documentação:
 	
 # Gerar e adicionar nova chave SSH - Linux  
 
-[Fonte](https://docs-github-com.translate.goog/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp)
+[Fonte 01](https://docs-github-com.translate.goog/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp)
+[Fonte 02](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=windows)
 
 . Verificar se existe chaves:  
 ls -al ~/.ssh  
@@ -24,7 +25,7 @@ ls -al ~/.ssh
 ssh-keygen -t ed25519 -C "your_email@example.com"  
 
 . Reescreva outra chave (nome padronizado), ou desconsidere este passo e aperte ENTER, para salvar o nome da chave como 'id_ed25519':  
-/home/elildes/.ssh/id_ssh_elildes  
+/home/user/.ssh/id_ssh_user  
 > digite a senha (ssh)  
 > digite novamente a senha (ssh)  
 
@@ -32,10 +33,10 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 sudo -s -H eval "$(ssh-agent -s)"  
 
 . Adicionar a chave privada SSH ao agente ssh e armazenar no chaveiro:  
-sudo -s -H ssh-add --apple-use-keychain ~/.ssh/id_ssh_elildes  
+sudo -s -H ssh-add --apple-use-keychain ~/.ssh/id_ssh_user  
 
 . Se der erro digite:  
-/usr/bin/ssh-add -k ~/.ssh/id_ssh_elildes  
+/usr/bin/ssh-add -k ~/.ssh/id_ssh_user  
 > digite a senha ssh  
 
 . Verificar se as chaves foram criadas:  
@@ -51,11 +52,13 @@ eval "$(ssh-agent -s)"
 	
 # Gerar e adicionar nova chave SSH - Windows  
 
-[Fonte](https://docs-github-com.translate.goog/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=windows&_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp)
+[Fonte 01](https://docs-github-com.translate.goog/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=windows&_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp)
+[Fonte 02]([Fonte 02](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=windows)
 
-Pré-requisitos:
+## Pré-requisitos
 	
-a. Caso o `Cliente OpenSSH` não esteja ativado, fazer o seguinte:  
+a. Aconselho a usar o `terminal GitBash`.  
+b. Caso o `Cliente OpenSSH` não esteja ativado, fazer o seguinte:  
 ```
 Clicar na tecla Windows.
 Configurações.
@@ -64,40 +67,66 @@ Aplicativos e recursos: Recursos opcionais.
 Procurar por Cliente OpenSSH e instalar.
 ```
 
-b. Certifique-se que o GitBash está instalado no seu computador.  
-
 . Verificar se existe chaves:  
 ls -al ~/.ssh  
 
-. No terminal digite:  
+## Gerar uma nova senha SSH  
+
+1. Abra o Git Bash.  
+	
+2. No terminal do GitBash (criar uma nova chave SSH):  
 ssh-keygen -t ed25519 -C "your_email@example.com"  
 
+**Nota**: se está usando um sistema `legacy` não tem suporte ao `Ed25519`, então use o seguinte comando:
+`$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+	
 . Reescreva outra chave (nome padronizado), ou desconsidere este passo e aperte ENTER, para salvar o nome da chave como 'id_ed25519':  
  
-/c/Users/elildes/.ssh/id_ssh_elildes  
+/c/Users/user/.ssh/id_ssh_user [aperte ENTER]  
 ou digite:  
-C:\Users\elildes/.ssh/id_ssh_elildes
+C:\Users\user/.ssh/id_ssh_user [aperte ENTER]  
 
-**Obs.**: veja o padrão do diretporio no terminal. Fin no CMD  e deu certo. 
+**Obs.**: veja o padrão do diretório no terminal.  
 
+3. Digitar a nova senha do SSH  
+	
 > digite a senha (ssh)  
 > digite novamente a senha (ssh)  
 
-. Adicionar a chave SSH ao agente ssh (gerenciador de chaves):  
-exec ssh-agent bash  
+## Adicionar sua shave  SSH para o ssh-agent (gerenciador de chaves)
+
+**Pré-requisitos**  
+	
+Certifique-se que verifique se existe senhas SSH:  
+`ls -al ~/.ssh`  
+	
+1. Verifique se o `agent-ssh` está em execução:  
+
+# Inciar o ssh-agent:  
 eval "$(ssh-agent -s)"  
 
-**Obs.**: pode ser necessário usar um comando diferente. Por exemplo, talvez seja necessário usar o acesso sudo -s -Hantes de iniciar o agente ou usar exec ssh-agent bash ou exec ssh-agent zsh para executar o agente.  
+**Obs.**: pode ser necessário usar um comando diferente. Por exemplo, talvez seja necessário usar o acesso `sudo -s -Hantes` para iniciar o agente ou usar `exec ssh-agent bash` ou `exec ssh-agent zsh` para executar o agente.  
 
-**Obs.**: se mesmo assim não consehuir, configure 0 ssh-agenta a iniciar manualmente, pois assim que você executar, o serviço irá inciar.  
-Ex.:  
-`Get-Service -Name ssh-agent | Set-Service -StartupType Manual`  
+**Ex.:**  
+```
+exec ssh-agent bash  
+eval "$(ssh-agent -s)"  
+```
+
+**Obs.**: se mesmo assim não consehuir, configure o `ssh-agent` a iniciar manualmente, pois assim que você executar, o serviço irá iniciar.  
+**Ex.:**  
+```
+Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+eval "$(ssh-agent -s)"
+```
 
 [Fonte](https://stackoverflow.com/questions/52113738/starting-ssh-agent-on-windows-10-fails-unable-to-start-ssh-agent-service-erro)  
 
-. Adicionar a chave privada SSH ao agente ssh e armazenar no chaveiro:  
-ssh-add --apple-use-keychain ~/.ssh/id_ssh_elildes  
-
+2. Adicionar a chave privada SSH ao agente ssh e armazenar no chaveiro:  
+`ssh-add --apple-use-keychain ~/.ssh/id_ssh_user`  
+Ou:  
+`ssh-add ~/.ssh/id_ssh_user`
+	
 . Se der erro digite:  
 **Obs.**: acessar o link fonte.  
 
@@ -120,11 +149,11 @@ eval "$(ssh-agent -s)"
 ls -al ~/.ssh  
 
 . Copiar a chave ṕública p/ área de transferência:  
-pbcopy < ~/.ssh/id_ssh_elildes.pub  
-**Obs.**: copia o conteúdo do arquivo 'id_ssh_elildes.pub'  
+pbcopy < ~/.ssh/id_ssh_user.pub  
+**Obs.**: copia o conteúdo do arquivo 'id_ssh_user.pub'  
 
 . Se der erro, copiar direto do terminal a chave pública.  
-cat < ~/.ssh/id_ssh_elildes.pub  
+cat < ~/.ssh/id_ssh_user.pub  
 **Ex.**:  ssh-ed25519 BBBBC3NzaC1lZPA1NTE5CCCCILqKHEGW0WJjl456uwPuI9JblYEtPqLLjbfyPthxWEy4 exemplo@seu.email  
 
 . No site do GitHub:  
@@ -192,12 +221,12 @@ Clicar em + (canto direito superior)
 
 ## 2.2) Segunda forma (baixar/clonar do git para o pc):  
 . No seu pc, abra o terminal e vá até a pasta que queira baixar o repositório  
-. Copiar a url do repositório >>> https://github.com/Elildes/ufrn-2019.1-itp-projeto.git  
+. Copiar a url do repositório >>> https://github.com/user/ufrn-2019.1-itp-projeto.git  
 . No PC (programa do git já instalado: com o terminal entra na pasta a ser baixado)  
 `git clone <url do repositório>`: salva uma pasta com o mesmo nome do projeto. Ex.: ufrn-2019.1-itp-projeto (nome da pasta criada)  
 **Obs.**: após o comando acima, o repositório do projeto será baixado dentro da pasta onde o terminal está acessando.  
 **Obs.**: caso queira clonar o repositório em um diretório diferente do projeto, especifique esse diretório conforme abaixo:  
-`git clone https://github.com/Elildes/ufrn-2019.1-itp-projeto.git` projeto (o repositório será salvo na pasta projeto)  
+`git clone https://github.com/user/ufrn-2019.1-itp-projeto.git` projeto (o repositório será salvo na pasta projeto)  
 
 **Obs.01**: Se não tiver clonado um repositório existente e quer conectar seu repositório a um servidor remoto, você deve adicioná-lo com:  
 `git remote add origin <servidor>`  
