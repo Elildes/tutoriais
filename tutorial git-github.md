@@ -8,11 +8,9 @@ Documentação:
 2. [Gerar e adicionar nova chave SSH - Windows](#gerarchavesshwin)
 3. [Adicionar a chave SSH a conta no GitHub - Navegador Web](#addsshgithub)
 4. xx  
+8.2. [Contribuir com projetos de terceiros - Pull Request](#addContribuircomprojetos)
 
-
-<div id='gerarchavesshlinux/'>
-
-	
+ 
 # Gerar e adicionar nova chave SSH - Linux  
 
 [Fonte 01](https://docs-github-com.translate.goog/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp)  
@@ -389,17 +387,37 @@ Obs.: permite mesclar arquivos que foi alterado por mais de uma pessoa
 
 
 8.1) Fork (adicionar projeto de terceiros ao seu GitHub)
+
+Obs.: usado muito para contribuidores de repositórios.  
+
 . Login no GitHub
 . Ir na URL do repositório de terceiros que deseja copiar
 > Clicar em Fork (URL do GitHub que quer copiar)
 . Pronto, url copiada para o seu usuário do GutHub
 
-8.2) Contribuir com projeos de terceiros - Pull Request (On Line: usando o GitHub)
+<div id='addContribuircomprojetos/'>
+	
+8.2) Contribuir com projetos de terceiros - Pull Request (On Line: usando o GitHub)
 . Após fazer Fork (adicionar projeto de terceiros ao seu GitHub):
 > Clonar o projeto para o PC
 > Entrar na pasta do projeto clonado
 > fazer as modificações
-> adicionar e comitar alterações
+> adicionar e comitar alterações para o repo origin (pessoal)
+> fazer pull com rebase (atualizar e pocicionar o código para o final):
+```
+// Pull com rebase - pegar alterações do repo central (forkado)
+git remote add upstream <url_repo_central>		
+git remote -v
+origin <url_repo_pessoal> (fetch)
+origin <url_repo_pessoal> (push)
+upstream <url_repo_central> (fetch)	// pegar alterações
+upstream <url_repo_central> (push)	// enviar alterações
+
+Obs.: origin e upstream são repo remotos.
+		
+git pull upstream main --rebase		// atualiza e posiciona os commits ao final do repo. `main` é a branch remota.
+					// ou: no GitHub -> url_repo -> Sync fork -> Update branch
+```
 > Abrir a pasta do projeto no GitHub
 > Clicar em Compare e Criar Pull request (título + detalhes)
 > enviar ....
