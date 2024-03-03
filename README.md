@@ -43,5 +43,5 @@ Como instalar e executar programas do Windows no Linux com Wine.
 [Wine - instalar e executar programas do Windows no Linux](https://github.com/Elildes/tutoriais/blob/master/windows-corrigir-inicializa%C3%A7%C3%A3o.md):
 Como corrigir o Windows pelo CMD na inicialização.
 
-[WSL - Ferramentas do Linux direto no Windows](https://github.com/Elildes/tutoriais/blob/master/wsl.md)
+[WSL - Ferramentas do Linux direto no Windows](https://github.com/Elildes/tutoriais/blob/master/wsl.md):
 Diversas formas de usar aplicações do Linux direto no Windows.
