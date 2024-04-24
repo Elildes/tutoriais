@@ -3,7 +3,7 @@
 Fonte 1: https://www.youtube.com/watch?v=-IA9VivrY4c&ab_channel=AlexandreAtanes  
 Fonte 2: https://www.youtube.com/watch?v=KC-mZ5Ew_jE&ab_channel=IvanSalvadori  
 
-**Í N D I C E**  
+# Í N D I C E
 
 1. [Criar um novo projeto no Eclipse e enviar ao repositório GitHub](#criarprojeto)
 2. [Importar ou Clonar o Projeto](#importarclonar)
