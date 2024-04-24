@@ -1,5 +1,13 @@
 # INSTALAR O ANACONDA NAVIGATOR NO LINUX
 
+# Í N D I C E
+
+1. [Instalar o Anaconda](#instalar)
+
+# Passo a passo
+
+<div id='instalar'/>
+
 1. Baixar o Miniconda (conda + Python): https://docs.conda.io/en/latest/miniconda.html  
 
 2. Instalar o Miniconda:  
