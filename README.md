@@ -7,6 +7,9 @@ Segue a lista dos tutoriais:
 [Atalhos](https://github.com/Elildes/tutoriais/edit/master/atalhos.md):
 Como como criar atalhos de aplicativios na área de trabalho do Linux.
 
+[Docker - Tutorial](https://github.com/Elildes/tutoriais/blob/master/docker.md):
+Contêinerização com Docker
+
 [Eclipse - Tutorial](https://github.com/Elildes/tutoriais/blob/master/Eclipse.md):
 Importar/exportar Projetos, códigos e bibliotecas. Executar App Java/JavaFX (com argumentos), etc
 
