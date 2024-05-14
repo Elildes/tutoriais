@@ -4,6 +4,7 @@
 
 [Principais comandos - containers](#maincmdcont)  
 [Principais comandos - imagens](#maincmdima)  
+[Principais comandos - Dockerfile](#maindockfile)  
 
 <div id='maincmdcont'/>
 
@@ -106,5 +107,50 @@ Remover todas as imagens:
 docker rmi $(docker images -q)
 ```
 
+<div id='maindockfile'/>
+
+## Principais comandos - Dockerfile
+
+Criar Dockerfile:
+```bash
+# imagem a ser usada como ponto de partida
+FROM node:lts-alpine
+
+# instala um servidor http simples para servir conteúdo estático
+RUN npm install -g http-server
+
+# faz da pasta 'app' o diretório atual de trabalho
+WORKDIR /app
+
+# copia os arquivos 'package.json' e 'package-lock.json' (se disponível)
+COPY package*.json ./
+
+# instala dependências do projeto
+RUN npm install
+
+# copia arquivos e pastas para o diretório atual de trabalho (pasta 'app')
+COPY . .
+
+# compila a aplicação de produção com minificação
+RUN npm run build
+
+# porta exposta do container
+EXPOSE 8080
+
+# criação do conatiner
+CMD [ "http-server", "dist" ]
+```
+
+Criar imagens a partir de Dockerfile:
+```bash
+docker build -t nome_da_imagem .
+```
+
+**Obs.:** executar o 'Dockerfile' na pasta pasta do arquivo.  
+
+Criar e executar o container a partir da imagem gerada via Dockerfile:
+```bash
+docker run -it -p 8080:8080 --rm --name nome_d0_container nome_da_imagem
+```
 
 
