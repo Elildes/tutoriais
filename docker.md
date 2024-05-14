@@ -2,11 +2,12 @@
 
 **Índice**  
 
-1. [Principais comandos](#maincmd)
+[Principais comandos - containers](#maincmdcont)  
+[Principais comandos - imagens](#maincmdima)  
 
-<div id='maincmd'/>
+<div id='maincmdcont'/>
 
-## Principais Comandos
+## Principais comandos - containers
 
 Determinar a versão do daemon Docker:
 ```bash
@@ -31,16 +32,6 @@ docker network ls
 Quantas redes existem no ambiente Docker:  
 ```bash
 docker network ls -q | wc -l
-```
-
-Determinar quais imagens existem no sistema:
-```bash
-docker images
-```
-
-Quantas imagens existem no sistema:
-```bash
-docker images -q | wc -l
 ```
 
 Executar container de forma interativa:
@@ -71,11 +62,6 @@ Remover todos os containers:
 docker ps -aq | xargs docker rm
 ```
 
-Baixar imagens:
-```bash
-docker image pull nginx:alpine
-```
-
 Mapear (expor) portas de container:
 ```bash
 # porta do host = 31080 e porta do container = 80
@@ -90,3 +76,35 @@ Rodar container com mapeamento de portas com persistência de dados (volumes):
 # /usr/share/nginx/html: diretório do container onde os dados serão salvos
 docker run --name <name_container> -v /dir_host:/usr/share/nginx/html:ro -d nginx
 ```
+
+## Principais comandos - imagens
+
+<div id='maincmdima'/>
+
+Determinar quais imagens existem no sistema:
+```bash
+docker images
+```
+
+Quantas imagens existem no sistema:
+```bash
+docker images -q | wc -l
+```
+
+Baixar imagens:
+```bash
+docker image pull nginx:alpine
+```
+
+Remover imagens:
+```bash
+docker rmi <id_ou_name_imagem>
+```
+
+Remover todas as imagens:
+```bash
+docker rmi $(docker images -q)
+```
+
+
+
