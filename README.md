@@ -7,7 +7,7 @@ Segue a lista dos tutoriais:
 [Acesso Remoto Windows (RDP)](https://github.com/Elildes/tutoriais/blob/master/rdp.md):  
 Como Configurar e Utilizar o Serviço Área de Trabalho Remota  
 
-[Atalhos](https://github.com/Elildes/tutoriais/edit/master/atalhos.md):
+[Atalhos](https://github.com/Elildes/tutoriais/blob/master/atalhos.md):
 Como como criar atalhos de aplicativios na área de trabalho do Linux.
 
 [Docker - Tutorial](https://github.com/Elildes/tutoriais/blob/master/docker.md):
