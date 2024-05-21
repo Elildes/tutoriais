@@ -34,6 +34,9 @@ Instalação, configuração, JAVA_HOME, JRE_HOME e mudança de versão do Java 
 [Maven - Instalação do Maven no Linux e Windows](https://github.com/Elildes/tutoriais/blob/master/maven.md):
 instalar o gerenciador de projetos Java Maven em uma máquina com Sistema Operacional Linux via SDKMan.
 
+[Nuxt 3 Framework](https://github.com/Elildes/tutoriais/blob/master/nuxt.md):
+Nuxt 3 é um framework para construção de interfaces de usuário baseado no [Vue](https://vuejs.org/).  
+
 [PostgreSQL - Gerenciador de banco de dados](https://github.com/Elildes/tutoriais/blob/master/postgresql.md):
 Como usar o PostegreSQL para manipular banco de dados.
 
