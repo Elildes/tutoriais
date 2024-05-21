@@ -4,7 +4,7 @@ Pasta que contém vários tutoriais de instalação de pacotes e aplicativos no 
 
 Segue a lista dos tutoriais:
 
-[Acesso Remoto Windows (RDP)](https://github.com/Elildes/tutoriais/blob/master/rdp.md):  
+[Acesso Remoto Windows (RDP)](https://github.com/Elildes/tutoriais/blob/master/dist/rdp.md):  
 Como Configurar e Utilizar o Serviço Área de Trabalho Remota  
 
 [Atalhos](https://github.com/Elildes/tutoriais/blob/master/atalhos.md):
