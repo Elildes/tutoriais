@@ -7,31 +7,31 @@ Segue a lista dos tutoriais:
 [Acesso Remoto Windows (RDP)](https://github.com/Elildes/tutoriais/blob/master/dist/rdp.md):  
 Como Configurar e Utilizar o Serviço Área de Trabalho Remota  
 
-[Atalhos](https://github.com/Elildes/tutoriais/blob/master/atalhos.md):
+[Atalhos](https://github.com/Elildes/tutoriais/blob/master/dist/atalhos.md):
 Como como criar atalhos de aplicativios na área de trabalho do Linux.
 
-[Docker - Tutorial](https://github.com/Elildes/tutoriais/blob/master/docker.md):
+[Docker - Tutorial](https://github.com/Elildes/tutoriais/blob/master/dist/docker.md):
 Contêinerização com Docker
 
-[Eclipse - Tutorial](https://github.com/Elildes/tutoriais/blob/master/Eclipse.md):
+[Eclipse - Tutorial](https://github.com/Elildes/tutoriais/blob/master/dist/Eclipse.md):
 Importar/exportar Projetos, códigos e bibliotecas. Executar App Java/JavaFX (com argumentos), etc
 
-[Eclipse - JavaFX](https://github.com/Elildes/tutoriais/blob/master/Eclipse-JavaFX.md):
+[Eclipse - JavaFX](https://github.com/Elildes/tutoriais/blob/master/dist/Eclipse-JavaFX.md):
 JavaFX: instalar, testar. SceneBuilder: baixar, instalar e executar.
 
-[GitHub](https://github.com/Elildes/tutoriais/blob/master/tutorial%20git-github.md):
+[GitHub](https://github.com/Elildes/tutoriais/blob/master/dist/git-github.md):
 Tutorial sobre Git Hub.
 
-[IRPF 2020 - Imposto de Renda 2020](https://github.com/Elildes/tutoriais/blob/master/irpf-2020):
+[IRPF 2020 - Imposto de Renda 2020](https://github.com/Elildes/tutoriais/blob/master/dist/irpf-2020):
 Veja como fazer a instalação do programa IRPF2020 - Imposto de Renda de Pessoa Física com o OpenJDK (java open source).
 
-[Instalar programas: tar.gz, tar.bz2 e tar.xz:](https://github.com/Elildes/tutoriais/blob/master/instalar%20programas_.tar.gz_tar.bz2_tar.xz.txt)
-Comandos usados para instalar programas com extens]oes do tipo:  .tar.gz, tar.bz2 e tar.xz
+[Instalar programas: tar.gz, tar.bz2 e tar.xz:](https://github.com/Elildes/tutoriais/blob/master/dist/programas_.tar.gz_tar.bz2_tar.xz.txt)
+Comandos usados para instalar programas com extensções do tipo:  .tar.gz, tar.bz2 e tar.xz  
 
-[JAVA - Tutorial para instalar e configurar o Java no Linux e Windows](https://github.com/Elildes/tutoriais/blob/master/java.md):
+[JAVA - Tutorial para instalar e configurar o Java no Linux e Windows](https://github.com/Elildes/tutoriais/blob/master/dist/java.md):
 Instalação, configuração, JAVA_HOME, JRE_HOME e mudança de versão do Java no Linux e Winodws.
 
-[Maven - Instalação do Maven no Linux e Windows](https://github.com/Elildes/tutoriais/blob/master/maven.md):
+[Maven - Instalação do Maven no Linux e Windows](https://github.com/Elildes/tutoriais/blob/master/dist/maven.md):
 instalar o gerenciador de projetos Java Maven em uma máquina com Sistema Operacional Linux via SDKMan.
 
 [Nuxt 3 Framework](https://github.com/Elildes/tutoriais/blob/master/nuxt.md):
