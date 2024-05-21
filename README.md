@@ -34,7 +34,7 @@ Instalação, configuração, JAVA_HOME, JRE_HOME e mudança de versão do Java 
 [Maven - Instalação do Maven no Linux e Windows](https://github.com/Elildes/tutoriais/blob/master/dist/maven.md):
 instalar o gerenciador de projetos Java Maven em uma máquina com Sistema Operacional Linux via SDKMan.
 
-[Nuxt 3 Framework](https://github.com/Elildes/tutoriais/blob/master/nuxt.md):
+[Nuxt 3 Framework](https://github.com/Elildes/tutoriais/blob/master/dist/nuxt.md):
 Nuxt 3 é um framework para construção de interfaces de usuário baseado no [Vue](https://vuejs.org/).  
 
 [PostgreSQL - Gerenciador de banco de dados](https://github.com/Elildes/tutoriais/blob/master/postgresql.md):
@@ -43,17 +43,17 @@ Como usar o PostegreSQL para manipular banco de dados.
 [SFTP - Servidor Linux para transferência segura de arquivos](https://github.com/Elildes/tutoriais/blob/master/sftp-server.md):
 Como instalar e configurar um servidor Linux SFTP.
 
-[Spring Boot + PostgreSQL](https://github.com/Elildes/tutoriais/blob/master/spring-boot-postgresql.md):
+[Spring Boot + PostgreSQL](https://github.com/Elildes/tutoriais/blob/master/dist/spring-boot-postgresql.md):
 Criar um projeto Spring Boot com PostgreSQL (gerenciador de banco de dados).
 
-[Vim - Editor de Texto](https://github.com/Elildes/tutoriais/blob/master/vim.md):
+[Vim - Editor de Texto](https://github.com/Elildes/tutoriais/blob/master/dist/vim.md):
 Principais comandos do editor de texto Vim.
 
-[Windows - Como corrigir o Windows pelo CMD na inicialização](https://github.com/Elildes/tutoriais/blob/master/wine.md):
+[Windows - Como corrigir o Windows pelo CMD na inicialização](https://github.com/Elildes/tutoriais/blob/master/dist/wine.md):
 Como instalar e executar programas do Windows no Linux com Wine.
 
-[Wine - instalar e executar programas do Windows no Linux](https://github.com/Elildes/tutoriais/blob/master/windows-corrigir-inicializa%C3%A7%C3%A3o.md):
+[Wine - instalar e executar programas do Windows no Linux](https://github.com/Elildes/tutoriais/blob/master/dist/windows-corrigir-init.md):
 Como corrigir o Windows pelo CMD na inicialização.
 
-[WSL - Ferramentas do Linux direto no Windows](https://github.com/Elildes/tutoriais/blob/master/wsl.md):
+[WSL - Ferramentas do Linux direto no Windows](https://github.com/Elildes/tutoriais/blob/master/dist/wsl.md):
 Diversas formas de usar aplicações do Linux direto no Windows.
