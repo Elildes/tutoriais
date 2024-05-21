@@ -37,10 +37,10 @@ instalar o gerenciador de projetos Java Maven em uma máquina com Sistema Operac
 [Nuxt 3 Framework](https://github.com/Elildes/tutoriais/blob/master/dist/nuxt.md):
 Nuxt 3 é um framework para construção de interfaces de usuário baseado no [Vue](https://vuejs.org/).  
 
-[PostgreSQL - Gerenciador de banco de dados](https://github.com/Elildes/tutoriais/blob/master/postgresql.md):
+[PostgreSQL - Gerenciador de banco de dados](https://github.com/Elildes/tutoriais/blob/master/dist/postgresql.md):
 Como usar o PostegreSQL para manipular banco de dados.
 
-[SFTP - Servidor Linux para transferência segura de arquivos](https://github.com/Elildes/tutoriais/blob/master/sftp-server.md):
+[SFTP - Servidor Linux para transferência segura de arquivos](https://github.com/Elildes/tutoriais/blob/master/dist/sftp-server.md):
 Como instalar e configurar um servidor Linux SFTP.
 
 [Spring Boot + PostgreSQL](https://github.com/Elildes/tutoriais/blob/master/dist/spring-boot-postgresql.md):
