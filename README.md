@@ -49,6 +49,9 @@ Criar um projeto Spring Boot com PostgreSQL (gerenciador de banco de dados).
 [Vim - Editor de Texto](https://github.com/Elildes/tutoriais/blob/master/dist/vim.md):
 Principais comandos do editor de texto Vim.
 
+[Virtual Box](https://github.com/Elildes/tutoriais/blob/master/dist/virtualbox.md):
+Configurações Básicas do Virtual Box.
+
 [Windows - Como corrigir o Windows pelo CMD na inicialização](https://github.com/Elildes/tutoriais/blob/master/dist/wine.md):
 Como instalar e executar programas do Windows no Linux com Wine.
 
