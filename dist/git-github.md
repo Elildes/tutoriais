@@ -16,10 +16,12 @@ Documentação:
 [Fonte 01](https://docs-github-com.translate.goog/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp)  
 [Fonte 02](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=windows)  
 
-. Verificar se existe chaves:  
+## Verificar se existe chaves
+```bash
 ls -al ~/.ssh  
+```
 
-. No terminal digite:  
+## No terminal digite:  
 ssh-keygen -t ed25519 -C "your_email@example.com"  
 
 . Reescreva outra chave (nome padronizado), ou desconsidere este passo e aperte ENTER, para salvar o nome da chave como 'id_ed25519':  
@@ -27,27 +29,67 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 > digite a senha (ssh)  
 > digite novamente a senha (ssh)  
 
-. Adicionar a chave SSH ao agente ssh (gerenciador de chaves):  
-sudo -s -H eval "$(ssh-agent -s)"  
+## Adicionar a chave SSH ao agente ssh (gerenciador de chaves)
 
-. Adicionar a chave privada SSH ao agente ssh e armazenar no chaveiro:  
-sudo -s -H ssh-add --apple-use-keychain ~/.ssh/id_ssh_user  
+1. Inicie o ssh-agent em segundo plano:  
+```bash
+$ eval "$(ssh-agent -s)"
+> Agent pid 59566
+```
 
-. Se der erro digite:  
-/usr/bin/ssh-add -k ~/.ssh/id_ssh_user  
-> digite a senha ssh  
+2. Adicione sua chave SSH privada ao ssh-agent:
+```bash
+ssh-add /home/<seu_usuario>/.ssh/id_ed25519
+```
 
-. Verificar se as chaves foram criadas:  
-ls -al ~/.ssh  
+3. Adicione a chave pública SSH à sua conta em GitHub. Para obter mais informações, confira [Adicionar uma nova chave SSH à sua conta do GitHub](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)  
 
-. Certificar se o agente ssh estar em execução:  
-eval "$(ssh-agent -s)"  
-> Agent pid xxx  
+## Como adicionar uma nova chave SSH à sua conta do Git Hub
+
+[Fonte](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account)  
+
+### Pré-requisitos
+Antes de adicionar uma nova chave SSH à sua conta em GitHub.com, conclua as etapas a seguir.  
+
+1. Verifique se há chaves SSH existentes. Para obter mais informações, confira "Verificar se há chaves SSH".  
+```bash
+$ ls -al ~/.ssh
+# Lists the files in your .ssh directory, if they exist
+```
+
+2. Gere uma nova chave SSH e adicione-a ao agente SSH do computador. Para obter mais informações, confira "Gerando uma nova chave SSH e adicionando-a ao agente SSH".  
+
+### Como adicionar uma nova chave SSH à sua conta
+
+**No terminal Linux**  
+
+1 Copie a chave pública SSH para a sua área de transferência:  
+```bash
+$ cat ~/.ssh/id_ed25519.pub
+# Then select and copy the contents of the id_ed25519.pub file
+# displayed in the terminal to your clipboard
+```
+
+**No Git Hub**  
+
+1 No canto superior direito de qualquer página, clique na foto do seu perfil e em Configurações.  
+
+2. Na seção "Acesso" da barra lateral, clique em  Chaves SSH e GPG.  
+
+3. Clique em Nova chave SSH ou Adicionar chave SSH.  
+
+4. No campo "Title" (Título), adicione uma etiqueta descritiva para a nova chave. Por exemplo, se estiver usando um laptop pessoal, você poderá chamar essa chave de "Laptop pessoal".  
+
+5. Selecione o tipo de chave: autenticação ou assinatura. Para saber mais sobre a assinatura de commit, confira "Sobre a verificação de assinatura de commit".  
+
+6. No campo "Chave", cole sua chave pública.  
+
+7. Clique em Adicionar chave SSH.  
+
+8. Se solicitado, confirme acesso à sua conta em GitHub. Para obter mais informações, confira "Modo sudo".  
 
 
-<div id='gerarchavesshwin/'>
-
-	
+<div id='gerarchavesshwin/'>	
 # Gerar e adicionar nova chave SSH - Windows  
 
 [Fonte 01](https://docs-github-com.translate.goog/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=windows&_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=wapp)  
