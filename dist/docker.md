@@ -107,6 +107,12 @@ Remover todas as imagens:
 docker rmi $(docker images -q)
 ```
 
+Criar imagens a partor de Dockerfile:
+```bash
+# Ponto '.': local do Dockerfile
+docker image build -t <nome_imagem> .
+```
+
 <div id='maindockfile'/>
 
 ## Principais comandos - Dockerfile
