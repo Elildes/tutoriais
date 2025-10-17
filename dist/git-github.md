@@ -6,6 +6,7 @@ Documentação:
 
 1. [Gerar e adicionar nova chave SSH - Linux](#gerarchavesshlinux)
 2. [Gerar e adicionar nova chave SSH - Windows](#gerarchavesshwin)
+2.1 [Instalar SSH com WSL](#addsshwsl)
 3. [Adicionar a chave SSH a conta no GitHub - Navegador Web](#addsshgithub)
 4. [Criar novo repositório (direto do site do git hub)](#criarNovoRepo)
 5. [Configuração inicial do Git](#configInitGit)
@@ -185,6 +186,45 @@ ls -al ~/.ssh
 eval "$(ssh-agent -s)"  
 > Agent pid xxx  
 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+<div id='addsshwsl'/>
+
+2.1 Instalar SSH com WSL
+
+Passos para configurar SSH no Windows (rápido)
+Gerar chave e adicionar ao ssh-agent:
+
+Bash
+
+ssh-keygen -t ed25519 -C "colafina2000@yahoo.com.br"
+# pressione Enter para aceitar o caminho padrão (~/.ssh/id_ed25519) e escolha passphrase ou deixe em branco
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+Copiar chave pública para a área de transferência (WSL → Windows clipboard) e abrir página do GitHub para colar:
+
+Bash
+
+cat ~/.ssh/id_ed25519.pub | clip.exe
+# Agora vá para https://github.com/settings/keys → New SSH key → cole e salve
+Atualizar remote para SSH, testar conexão e enviar branch main:
+
+Bash
+
+cd /mnt/c/Git/proj-eng-linguagem
+git remote set-url origin git@github.com:Elildes/proj-eng-linguagem.git
+ssh -T git@github.com
+git push --set-upstream origin main
+Se o ssh-agent não persistir entre sessões, adicione ao seu ~/.profile:
+
+Bash
+
+# adicione ao final de ~/.profile
+eval "$(ssh-agent -s)" >/dev/null
+ssh-add ~/.ssh/id_ed25519 >/dev/null 2>&1 || true
+Se aparecerem credenciais HTTPS antigas, remova-as no Windows Credential Manager (GitHub) antes de tentar novamente.
 
 <div id='addsshgithub'/>
 
