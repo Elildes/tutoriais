@@ -31,6 +31,9 @@ Comandos usados para instalar programas com extensções do tipo:  .tar.gz, tar.
 [JAVA - Tutorial para instalar e configurar o Java no Linux e Windows](https://github.com/Elildes/tutoriais/blob/master/dist/java.md):
 Instalação, configuração, JAVA_HOME, JRE_HOME e mudança de versão do Java no Linux e Winodws.
 
+[Makefile - Arquivo de script de build Make e compilação](https://github.com/Elildes/tutoriais/blob/master/dist/makefile.md):
+Criar arquivos `Makefile` para automatizar a compilação de softwares via terminais.
+
 [Maven - Instalação do Maven no Linux e Windows](https://github.com/Elildes/tutoriais/blob/master/dist/maven.md):
 instalar o gerenciador de projetos Java Maven em uma máquina com Sistema Operacional Linux via SDKMan.
 
