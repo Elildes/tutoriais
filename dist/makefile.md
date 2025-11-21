@@ -69,3 +69,135 @@ funcao.o:
 Fontes:
 . Aula sobre o tema referente aos slides do grupo de professores LP1 do IMD/UFRN (material 2020.6 e 2020.2)  
 . Manuais do terminal Ubuntu.  
+
+## Exemplo 01 - Makefile com o programa `flex`
+
+Execute no terminal:
+
+- Compilar e contruir o programa:  
+`~$ make`
+
+- Limpar os arquivos `lex.yy.c`, `y.tab.*`, `compiler`, `output.txt` e `y.output`:  
+`~$ make clean`  
+
+
+```bash
+all: compilador
+
+compilador: lex.yy.c y.tab.c 
+	gcc lex.yy.c y.tab.c ./lib/record.c -o compiler
+
+lex.yy.c: scanner.l
+	flex scanner.l
+
+y.tab.c: parser.y  
+	bison parser.y -d -v -o y.tab.c
+
+clean:
+	rm -rf lex.yy.c y.tab.* compiler output.txt y.output
+```
+
+## Exemplo 02 - Makefile com o programa `flex`
+
+Ir para a pasta onde está o arquivo Makefile.
+
+1 - Constroi o programa:
+
+```bash
+make
+```
+
+2 - Executa o analisador:
+
+```bash
+make run
+```
+
+3 - Limpar todos os arquivos e diretórios gerados:
+
+```bash
+make clean
+```
+
+4 - Outros comandos:
+
+Este é o comando primeiro garante que o `analisador.out` esteja construído (executando os passos do `make analisador` se o executável não existir ou se `analisador.l` for mais novo), ou seja, roda os comandos `flex, gcc e a execução`.
+
+Depois, ele executa o comando: `./analisador.out < code.txt`.
+
+```bash
+make run_analisador
+```
+
+Executa o analisador, mas desta vez usando `outro_arquivo.txt` como entrada.
+
+```bash
+./analisador.out < outro_arquivo.txt
+```
+
+Construir apenas o seu analisador léxico:
+
+```bash
+make analisador
+```
+
+```bash
+# --- Compiladores e Flags ---
+CC = gcc
+CFLAGS = -Wall -Wextra -g -I.
+LEX = flex
+LFLAGS = -lfl # Flags do linker para o flex (biblioteca do flex)
+
+# --- Arquivos do Projeto Analisador ---
+# O .l de origem
+ANALISADOR_SRC_L = analisador.l
+
+# O executável final
+ANALISADOR_TARGET = analisador.out
+
+# Arquivos intermediários (gerados na pasta local)
+ANALISADOR_SRC_C = lex.yy.c
+ANALISADOR_OBJ = lex.yy.o
+
+# --- Variável para Execução ---
+# Define um arquivo de entrada padrão.
+# Você pode sobrepor isso na linha de comando, ex:
+# make run INPUT=outro_arquivo.txt
+INPUT_FILE = code.txt
+
+# --- Targets Principais ---
+
+# O target 'all' é o padrão (o que roda quando você digita apenas 'make')
+# Ele agora constrói o analisador.
+all: $(ANALISADOR_TARGET)
+
+# Target para EXECUTAR o analisador.
+# Ele usa a variável $(INPUT_FILE)
+run: $(ANALISADOR_TARGET)
+	@echo "--- Executando analisador com entrada: $(INPUT_FILE) ---"
+	./$(ANALISADOR_TARGET) < $(INPUT_FILE)
+
+# --- Regras de Build (Compilação) ---
+
+# 1. Linkagem: Cria o executável final 'analisador.out' a partir do .o
+$(ANALISADOR_TARGET): $(ANALISADOR_OBJ)
+	$(CC) $(ANALISADOR_OBJ) -o $(ANALISADOR_TARGET) $(LFLAGS)
+
+# 2. Compilação: Cria o arquivo objeto 'lex.yy.o' a partir do .c
+$(ANALISADOR_OBJ): $(ANALISADOR_SRC_C)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# 3. Geração (Flex): Cria o arquivo 'lex.yy.c' a partir do 'analisador.l'
+$(ANALISADOR_SRC_C): $(ANALISADOR_SRC_L)
+	$(LEX) -o $@ $<
+
+# --- Limpeza ---
+# Remove todos os arquivos gerados (intermediários e final)
+clean:
+	rm -f $(ANALISADOR_TARGET) $(ANALISADOR_SRC_C) $(ANALISADOR_OBJ)
+	# Também tenta remover pastas antigas, caso existam
+	rm -rf dist tmp
+
+# Declara os targets que não geram arquivos
+.PHONY: all run clean
+```
