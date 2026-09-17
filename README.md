@@ -37,6 +37,9 @@ Criar arquivos `Makefile` para automatizar a compilação de softwares via termi
 [Maven - Instalação do Maven no Linux e Windows](https://github.com/Elildes/tutoriais/blob/master/dist/maven.md):
 instalar o gerenciador de projetos Java Maven em uma máquina com Sistema Operacional Linux via SDKMan.
 
+[NMap - Mapeador de Rede](https://github.com/Elildes/tutoriais/blob/master/dist/nmap.md):
+Ferramenta gratuita de código aberto usada para explorar redes e fazer auditorias de segurança.
+
 [Nuxt 3 Framework](https://github.com/Elildes/tutoriais/blob/master/dist/nuxt.md):
 Nuxt 3 é um framework para construção de interfaces de usuário baseado no [Vue](https://vuejs.org/).  
 
