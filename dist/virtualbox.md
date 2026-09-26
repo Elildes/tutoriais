@@ -68,13 +68,17 @@ Reniciar o Linux
 
 Para instalar os **Adicionais para Convidado** (Guest Additions) em sua máquina virtual Linux no VirtualBox, siga estes passos detalhados:
 
-1.  **Inserir o CD Virtual:** Com a máquina virtual ligada, vá ao menu superior, clique em **Dispositivos** e selecione **Inserir imagem de CD dos Adicionais para Convidado...**.  
-2.  **Acessar os arquivos:** Abra o disco virtual que aparecerá no sistema.  
-3.  **Abrir o terminal:** Clique com o botão direito em uma área vazia dentro da pasta do disco e selecione **Abrir terminal**.  
-4.  **Logar como superusuário (root):** No terminal, digite `sudo su` (ou `su root` em distribuições como Debian) e insira sua senha de administrador.  
-5.  **Tornar o arquivo executável:** Digite `chmod +x vbox-linux-additions.run` (use a tecla **Tab** para completar o nome do arquivo automaticamente) e pressione **Enter**.  
-6.  **Executar a instalação:** Digite `./vbox-linux-additions.run` (novamente, use o **Tab** para facilitar) e pressione **Enter**.  
-7.  **Finalizar:** Aguarde o processo terminar. A tela pode piscar durante a instalação e, ao concluir, a resolução será ajustada automaticamente para tela cheia.  
+1. 1. Baixar o arquivo `Oracle_VirtualBox_Extension_Pack-7.2.16.vbox-extpack` diretamente do site do VirtualBox.  
+2.  **Inserir o CD Virtual:** Com a máquina virtual ligada, vá ao menu superior, clique em **Dispositivos** e selecione **Inserir imagem de CD dos Adicionais para Convidado...**.  
+3.  **Acessar os arquivos:** Abra o disco virtual que aparecerá no sistema.  
+4.  **Abrir o terminal:** Clique com o botão direito em uma área vazia dentro da pasta do disco e selecione **Abrir terminal**.  
+5.  **Logar como superusuário (root):** No terminal, digite `sudo su` (ou `su root` em distribuições como Debian) e insira sua senha de administrador.
+6. Como os arquivos estão no CD Rom Virtual, você pdoerá executar com o comando `sudo ./VBoxLinuxAdditions.run`
+7. Depois de instalar, voxê terá que reiniciar com o comando `rebbot`.  
+Você também poderá tentar o seguinte:
+6.  **Tornar o arquivo executável:** Digite `chmod +x vbox-linux-additions.run` (use a tecla **Tab** para completar o nome do arquivo automaticamente) e pressione **Enter**.  
+7.  **Executar a instalação:** Digite `./vbox-linux-additions.run` (novamente, use o **Tab** para facilitar) e pressione **Enter**.  
+8.  **Finalizar:** Aguarde o processo terminar. A tela pode piscar durante a instalação e, ao concluir, a resolução será ajustada automaticamente para tela cheia.  
 
 Os recursos adicionais que estarão disponpiveis podem ser executados em **Dispositivos**.  
 
