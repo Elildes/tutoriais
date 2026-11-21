@@ -65,7 +65,8 @@ $ ls -al ~/.ssh
 # Lists the files in your .ssh directory, if they exist
 ```
 
-2. Gere uma nova chave SSH e adicione-a ao agente SSH do computador. Para obter mais informações, confira "Gerando uma nova chave SSH e adicionando-a ao agente SSH".  
+
+2. Gere uma nova chave SSH, caso não existe nenhuma chave, e adicione-a ao agente SSH do computador. Para obter mais informações, confira "Gerando uma nova chave SSH e adicionando-a ao agente SSH".  
 
 ### Como adicionar uma nova chave SSH à sua conta
 
